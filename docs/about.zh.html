@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于本应用 — cubew</title>
+<style>
+  :root { --accent: #6cf; --accent-rgb: 100,200,255; }
+  body {
+    background: #0a0a0f; color: #ddd; font-family: monospace;
+    max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+    line-height: 1.7;
+  }
+  h2 { color: var(--accent); border-bottom: 1px solid rgba(var(--accent-rgb),0.3);
+        padding-bottom: 6px; margin-top: 2.2em; }
+  h2:first-of-type { margin-top: 0; }
+  a { color: var(--accent); }
+  code { background: #12121a; padding: 1px 6px; border-radius: 4px;
+          border: 1px solid rgba(var(--accent-rgb),0.25); }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.35em 0; }
+  .lang-nav { margin-bottom: 2em; font-size: 0.9em; }
+  .lang-nav a { margin-right: 10px; text-decoration: none; }
+  .lang-nav a.current { color: #fff; font-weight: bold; text-decoration: underline; }
+  .back-link { display: inline-block; margin-top: 3em; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<nav class="lang-nav"><a href="about.html">EN</a><a href="about.ja.html">日本語</a><a href="about.zh.html" class="current">中文</a><a href="about.fr.html">FR</a><a href="about.ko.html">한국어</a><a href="about.es.html">ES</a><a href="about.pt.html">PT</a><a href="about.de.html">DE</a><a href="about.ru.html">RU</a></nav>
+<h2>关于本应用</h2>
+<p>这是一款完全在浏览器中运行的3x3魔方模拟器。无需安装，无需通过应用商店，只要打开这个页面即可立即开始游玩。</p>
+<p>从面向不会转魔方的用户的分步教程（LBL法），到面向想缩短用时的高阶玩家的分析工具，本应用覆盖了广泛的水平层次。</p>
+<h2>本应用可以做什么</h2>
+<ul>
+<li>只需用手指滑动即可直观操作</li>
+<li>通过分步教程从基础学习还原方法（支持9种语言）</li>
+<li>将喜欢的操作注册为"命令"，一键重现</li>
+<li>通过外部求解器自动求解</li>
+<li>记录用时、回放操作历史</li>
+<li>展开图显示、自由操作视角</li>
+</ul>
+<h2>关于本应用的安全性</h2>
+<ul>
+<li>我们优先考虑用户的乐趣，<strong>绝不显示任何广告</strong>，今后也没有引入广告的计划</li>
+<li><strong>本应用唯一的外部通信对象，是用于计算魔方解法的外部服务（求解器）。</strong> 发送的内容仅为"表示魔方状态的字符串"，绝不会发送姓名、设备信息、使用情况等任何可识别个人身份的信息</li>
+<li><strong>仅保存在您浏览器中的信息（localStorage）</strong>如下所示。这些信息全部保留在您的设备本地，不会发送到外部：</li>
+<li>速度、语言、坐标轴显示、命令设置等各项设置</li>
+<li>最高分记录（用时记录）</li>
+<li>教程进度</li>
+<li>未引入任何形式的访问分析或追踪功能</li>
+</ul>
+<h2>关于作者（itachiwalker）</h2>
+<ul>
+<li>GitHub：<code>github.com/itachiwalker</code></li>
+<li>教程数据（学习内容）已作为开源（OSS）公开。如有改进建议或错误指正，欢迎通过 GitHub 的 <a href="https://github.com/itachiwalker/cubew_tutorial/issues">Issue</a> 随时提出</li>
+<li>关于本应用的需求或问题反馈，也请通过 GitHub 的 <a href="https://github.com/itachiwalker/cubew/issues">Issue</a> 提出</li>
+</ul>
+<h2>关于捐赠</h2>
+<p>本应用免费提供，且不含广告。开发与维护是作者个人的兴趣项目，捐赠完全自愿。如果您觉得它对您有帮助或玩得开心，欢迎通过以下方式支持，这将成为我们继续前进的动力。</p>
+<p><strong><a href="#">筹备中</a></strong></p>
+<h2>禁止事项</h2>
+<p>请勿进行以下行为：</p>
+<ul>
+<li>下载本应用的文件，并在本服务以外的地方运行</li>
+<li>即使是个人使用，也不得修改源代码</li>
+<li>反编译、反汇编、去混淆等分析本应用内部结构的行为</li>
+<li>复制或再分发本应用</li>
+</ul>
+<p>※ 教程数据（学习内容）中已开源的部分不受此限制，该部分适用其另行规定的许可协议。</p>
+<p class="back-link"><a href="./index.html">← cubew</a></p>
+</body>
+</html>

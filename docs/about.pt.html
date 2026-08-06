@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre — cubew</title>
+<style>
+  :root { --accent: #6cf; --accent-rgb: 100,200,255; }
+  body {
+    background: #0a0a0f; color: #ddd; font-family: monospace;
+    max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+    line-height: 1.7;
+  }
+  h2 { color: var(--accent); border-bottom: 1px solid rgba(var(--accent-rgb),0.3);
+        padding-bottom: 6px; margin-top: 2.2em; }
+  h2:first-of-type { margin-top: 0; }
+  a { color: var(--accent); }
+  code { background: #12121a; padding: 1px 6px; border-radius: 4px;
+          border: 1px solid rgba(var(--accent-rgb),0.25); }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.35em 0; }
+  .lang-nav { margin-bottom: 2em; font-size: 0.9em; }
+  .lang-nav a { margin-right: 10px; text-decoration: none; }
+  .lang-nav a.current { color: #fff; font-weight: bold; text-decoration: underline; }
+  .back-link { display: inline-block; margin-top: 3em; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<nav class="lang-nav"><a href="about.html">EN</a><a href="about.ja.html">日本語</a><a href="about.zh.html">中文</a><a href="about.fr.html">FR</a><a href="about.ko.html">한국어</a><a href="about.es.html">ES</a><a href="about.pt.html" class="current">PT</a><a href="about.de.html">DE</a><a href="about.ru.html">RU</a></nav>
+<h2>Sobre este aplicativo</h2>
+<p>Um simulador de cubo mágico 3x3 que funciona inteiramente no seu navegador. Sem instalação, sem passar por nenhuma loja de aplicativos — basta abrir esta página para começar a jogar imediatamente.</p>
+<p>Ele atende a uma ampla gama de níveis, desde um tutorial passo a passo (método LBL) para quem não sabe resolver o cubo, até ferramentas de análise para praticantes avançados que buscam melhorar seus tempos.</p>
+<h2>O que você pode fazer neste aplicativo</h2>
+<ul>
+<li>Controles intuitivos — basta deslizar o dedo</li>
+<li>Aprenda o básico passo a passo com o tutorial guiado (disponível em 9 idiomas)</li>
+<li>Registre qualquer sequência de movimentos como um "comando" e reproduza-a com um único toque</li>
+<li>Resolução automática através de um solucionador externo</li>
+<li>Registro de tempos e reprodução/retrocesso do histórico de movimentos</li>
+<li>Visualização em planificação (net) e controle livre do ângulo da câmera</li>
+</ul>
+<h2>Sobre a segurança deste aplicativo</h2>
+<ul>
+<li>Priorizamos sua diversão: <strong>este aplicativo não exibe nenhum tipo de anúncio</strong>, e não há planos de introduzir publicidade no futuro</li>
+<li><strong>A única comunicação externa realizada por este aplicativo é com um serviço externo (solucionador) que calcula as soluções do cubo.</strong> Apenas uma string que representa o estado do cubo é enviada — nenhum nome, informação do dispositivo, dado de uso ou qualquer outra informação que possa identificá-lo pessoalmente é enviado</li>
+<li><strong>As informações armazenadas apenas no seu navegador (localStorage)</strong> limitam-se ao seguinte. Todas permanecem apenas no seu próprio dispositivo e nunca são enviadas a lugar nenhum:</li>
+<li>Configurações como velocidade, idioma, exibição de eixos e comandos definidos</li>
+<li>Recordes (tempos registrados)</li>
+<li>Progresso no tutorial</li>
+<li>Nenhum tipo de análise de acesso ou rastreamento (tracking) é utilizado</li>
+</ul>
+<h2>Sobre o autor (itachiwalker)</h2>
+<ul>
+<li>GitHub: <code>github.com/itachiwalker</code></li>
+<li>Os dados do tutorial (conteúdo educacional) são publicados como código aberto (OSS). Sinta-se à vontade para abrir uma <a href="https://github.com/itachiwalker/cubew_tutorial/issues">Issue</a> no GitHub com sugestões de melhoria ou para apontar erros</li>
+<li>Para solicitações ou relatos de bugs sobre este aplicativo em si, utilize também uma <a href="https://github.com/itachiwalker/cubew/issues">Issue</a> no GitHub</li>
+</ul>
+<h2>Sobre doações</h2>
+<p>Este aplicativo é gratuito e não exibe anúncios. Ele é desenvolvido e mantido como um projeto pessoal por hobby, e as doações são totalmente opcionais. Se você achou útil ou divertido, seu apoio abaixo seria muito encorajador.</p>
+<p><strong><a href="#">Em breve</a></strong></p>
+<h2>Usos proibidos</h2>
+<p>Por favor, evite as seguintes ações:</p>
+<ul>
+<li>Baixar os arquivos deste aplicativo e executá-los em qualquer lugar que não seja este serviço</li>
+<li>Modificar o código-fonte, mesmo para uso pessoal</li>
+<li>Descompilar, desmontar, desofuscar ou de qualquer outra forma analisar a estrutura interna do aplicativo</li>
+<li>Duplicar ou redistribuir este aplicativo</li>
+</ul>
+<p><em>Isso não se aplica aos dados do tutorial (conteúdo educacional), que são publicados como código aberto; a parte de código aberto é regida por sua própria licença separada.</em></p>
+<p class="back-link"><a href="./index.html">← cubew</a></p>
+</body>
+</html>
