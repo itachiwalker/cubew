@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Über diese App — cubew</title>
+<style>
+  :root { --accent: #6cf; --accent-rgb: 100,200,255; }
+  body {
+    background: #0a0a0f; color: #ddd; font-family: monospace;
+    max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+    line-height: 1.7;
+  }
+  h2 { color: var(--accent); border-bottom: 1px solid rgba(var(--accent-rgb),0.3);
+        padding-bottom: 6px; margin-top: 2.2em; }
+  h2:first-of-type { margin-top: 0; }
+  a { color: var(--accent); }
+  code { background: #12121a; padding: 1px 6px; border-radius: 4px;
+          border: 1px solid rgba(var(--accent-rgb),0.25); }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.35em 0; }
+  .lang-nav { margin-bottom: 2em; font-size: 0.9em; }
+  .lang-nav a { margin-right: 10px; text-decoration: none; }
+  .lang-nav a.current { color: #fff; font-weight: bold; text-decoration: underline; }
+  .back-link { display: inline-block; margin-top: 3em; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<nav class="lang-nav"><a href="about.html">EN</a><a href="about.ja.html">日本語</a><a href="about.zh.html">中文</a><a href="about.fr.html">FR</a><a href="about.ko.html">한국어</a><a href="about.es.html">ES</a><a href="about.pt.html">PT</a><a href="about.de.html" class="current">DE</a><a href="about.ru.html">RU</a></nav>
+<h2>Über diese App</h2>
+<p>Ein 3x3-Zauberwürfel-Simulator, der vollständig im Browser läuft. Keine Installation, kein App Store nötig — einfach diese Seite öffnen und sofort loslegen.</p>
+<p>Die App deckt ein breites Niveauspektrum ab: von einem schrittweisen Tutorial (LBL-Methode) für alle, die noch nicht wissen, wie man den Würfel löst, bis hin zu Analysewerkzeugen für Fortgeschrittene, die ihre Zeit verbessern möchten.</p>
+<h2>Was diese App kann</h2>
+<ul>
+<li>Intuitive Bedienung — einfach mit dem Finger wischen</li>
+<li>Die Grundlagen Schritt für Schritt im geführten Tutorial erlernen (in 9 Sprachen verfügbar)</li>
+<li>Beliebige Zugfolgen als „Befehl" registrieren und mit einem Fingertipp wiedergeben</li>
+<li>Automatisches Lösen über einen externen Solver</li>
+<li>Zeiterfassung sowie Zurückspulen/Wiedergabe des Zugverlaufs</li>
+<li>Netzdiagramm-Ansicht und freie Steuerung des Kamerawinkels</li>
+</ul>
+<h2>Zur Sicherheit dieser App</h2>
+<ul>
+<li>Ihr Vergnügen hat Priorität: <strong>Diese App zeigt keinerlei Werbung an</strong>, und wir planen auch in Zukunft keine Werbung einzuführen</li>
+<li><strong>Die einzige externe Kommunikation dieser App erfolgt mit einem Solver-Dienst, der die Lösung des Würfels berechnet.</strong> Übertragen wird ausschließlich eine Zeichenkette, die den Zustand des Würfels darstellt — Name, Geräteinformationen, Nutzungsdaten oder andere personenbezogene Informationen werden niemals übertragen</li>
+<li><strong>Nur in Ihrem Browser gespeicherte Informationen (localStorage)</strong> beschränken sich auf Folgendes. All diese Daten verbleiben ausschließlich auf Ihrem eigenen Gerät und werden nie an Dritte gesendet:</li>
+<li>Einstellungen wie Geschwindigkeit, Sprache, Achsenanzeige und Befehlszuordnungen</li>
+<li>Bestzeiten (aufgezeichnete Zeiten)</li>
+<li>Tutorial-Fortschritt</li>
+<li>Es kommt keinerlei Zugriffsanalyse oder Tracking zum Einsatz</li>
+</ul>
+<h2>Über den Autor (itachiwalker)</h2>
+<ul>
+<li>GitHub: <code>github.com/itachiwalker</code></li>
+<li>Die Tutorial-Daten (Lerninhalte) werden als Open Source (OSS) veröffentlicht. Verbesserungsvorschläge oder Fehlerhinweise können Sie gerne über ein <a href="https://github.com/itachiwalker/cubew_tutorial/issues">Issue</a> auf GitHub einreichen</li>
+<li>Für Wünsche oder Fehlermeldungen zu dieser App selbst nutzen Sie bitte ebenfalls ein <a href="https://github.com/itachiwalker/cubew/issues">Issue</a> auf GitHub</li>
+</ul>
+<h2>Über Spenden</h2>
+<p>Diese App ist kostenlos und werbefrei. Entwicklung und Pflege erfolgen als persönliches Hobbyprojekt; Spenden sind vollkommen freiwillig. Wenn Sie die App nützlich oder unterhaltsam fanden, würde uns Ihre Unterstützung über den folgenden Link sehr freuen.</p>
+<p><strong><a href="#">In Vorbereitung</a></strong></p>
+<h2>Untersagte Nutzung</h2>
+<p>Bitte verzichten Sie auf Folgendes:</p>
+<ul>
+<li>Das Herunterladen der Dateien dieser App und deren Ausführung an anderer Stelle als bei diesem Dienst</li>
+<li>Das Verändern des Quellcodes, auch bei rein privater Nutzung</li>
+<li>Dekompilieren, Disassemblieren, Deobfuskieren oder anderweitiges Analysieren der internen Struktur der App</li>
+<li>Das Vervielfältigen oder Weiterverbreiten dieser App</li>
+</ul>
+<p><em>Dies gilt nicht für die Tutorial-Daten (Lerninhalte), die als Open Source veröffentlicht werden; für den quelloffenen Teil gilt eine eigene, separate Lizenz.</em></p>
+<p class="back-link"><a href="./index.html">← cubew</a></p>
+</body>
+</html>

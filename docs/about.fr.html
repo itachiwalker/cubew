@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>À propos — cubew</title>
+<style>
+  :root { --accent: #6cf; --accent-rgb: 100,200,255; }
+  body {
+    background: #0a0a0f; color: #ddd; font-family: monospace;
+    max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+    line-height: 1.7;
+  }
+  h2 { color: var(--accent); border-bottom: 1px solid rgba(var(--accent-rgb),0.3);
+        padding-bottom: 6px; margin-top: 2.2em; }
+  h2:first-of-type { margin-top: 0; }
+  a { color: var(--accent); }
+  code { background: #12121a; padding: 1px 6px; border-radius: 4px;
+          border: 1px solid rgba(var(--accent-rgb),0.25); }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.35em 0; }
+  .lang-nav { margin-bottom: 2em; font-size: 0.9em; }
+  .lang-nav a { margin-right: 10px; text-decoration: none; }
+  .lang-nav a.current { color: #fff; font-weight: bold; text-decoration: underline; }
+  .back-link { display: inline-block; margin-top: 3em; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<nav class="lang-nav"><a href="about.html">EN</a><a href="about.ja.html">日本語</a><a href="about.zh.html">中文</a><a href="about.fr.html" class="current">FR</a><a href="about.ko.html">한국어</a><a href="about.es.html">ES</a><a href="about.pt.html">PT</a><a href="about.de.html">DE</a><a href="about.ru.html">RU</a></nav>
+<h2>À propos de cette application</h2>
+<p>Un simulateur de casse-tête Rubik's Cube 3x3 qui fonctionne entièrement dans votre navigateur. Aucune installation, aucun passage par une boutique d'applications — il suffit d'ouvrir cette page pour jouer immédiatement.</p>
+<p>Elle s'adresse à tous les niveaux : un tutoriel progressif (méthode LBL) pour celles et ceux qui ne savent pas comment résoudre un cube, jusqu'à des outils d'analyse pour les experts souhaitant améliorer leur temps.</p>
+<h2>Ce que permet cette application</h2>
+<ul>
+<li>Contrôles intuitifs — il suffit de glisser du doigt</li>
+<li>Apprenez les bases pas à pas grâce au tutoriel progressif (disponible en 9 langues)</li>
+<li>Enregistrez n'importe quelle séquence de mouvements comme une « commande » et rejouez-la d'un simple appui</li>
+<li>Résolution automatique via un solveur externe</li>
+<li>Enregistrement des temps et relecture/retour en arrière de l'historique des mouvements</li>
+<li>Affichage du patron (vue à plat) et contrôle libre de l'angle de vue</li>
+</ul>
+<h2>À propos de la sécurité de cette application</h2>
+<ul>
+<li>Nous donnons la priorité à votre plaisir : <strong>cette application n'affiche absolument aucune publicité</strong>, et nous n'avons aucun projet d'en introduire à l'avenir</li>
+<li><strong>La seule communication externe effectuée par cette application est avec un service de résolution (solveur) qui calcule les solutions du cube.</strong> Seule une chaîne de caractères représentant l'état du cube est envoyée — aucun nom, aucune information sur l'appareil, aucune donnée d'utilisation ni aucune autre information permettant de vous identifier personnellement n'est jamais envoyée</li>
+<li><strong>Les informations stockées uniquement dans votre navigateur (localStorage)</strong> se limitent à ce qui suit. Elles restent toutes sur votre propre appareil et ne sont jamais envoyées où que ce soit :</li>
+<li>Les réglages tels que la vitesse, la langue, l'affichage des axes et les commandes assignées</li>
+<li>Les meilleurs scores (temps enregistrés)</li>
+<li>La progression dans le tutoriel</li>
+<li>Aucun outil d'analyse ni de suivi (tracking) n'est utilisé</li>
+</ul>
+<h2>À propos de l'auteur (itachiwalker)</h2>
+<ul>
+<li>GitHub : <code>github.com/itachiwalker</code></li>
+<li>Les données du tutoriel (contenu pédagogique) sont publiées en open source (OSS). N'hésitez pas à ouvrir une <a href="https://github.com/itachiwalker/cubew_tutorial/issues">Issue</a> sur GitHub pour toute suggestion d'amélioration ou pour signaler une erreur</li>
+<li>Pour toute demande ou signalement de bug concernant l'application elle-même, merci également d'utiliser une <a href="https://github.com/itachiwalker/cubew/issues">Issue</a> sur GitHub</li>
+</ul>
+<h2>À propos des dons</h2>
+<p>Cette application est gratuite et sans publicité. Elle est développée et maintenue comme un projet personnel, et les dons sont entièrement optionnels. Si vous l'avez trouvée utile ou amusante, votre soutien ci-dessous serait très encourageant.</p>
+<p><strong><a href="#">Bientôt disponible</a></strong></p>
+<h2>Utilisations interdites</h2>
+<p>Merci de vous abstenir des actions suivantes :</p>
+<ul>
+<li>Télécharger les fichiers de cette application et les exécuter ailleurs que sur ce service</li>
+<li>Modifier le code source, même pour un usage personnel</li>
+<li>Décompiler, désassembler, désobfusquer, ou analyser de toute autre manière la structure interne de l'application</li>
+<li>Dupliquer ou redistribuer cette application</li>
+</ul>
+<p><em>Cela ne s'applique pas aux données du tutoriel (contenu pédagogique), qui sont publiées en open source ; la partie open source est régie par sa propre licence distincte.</em></p>
+<p class="back-link"><a href="./index.html">← cubew</a></p>
+</body>
+</html>

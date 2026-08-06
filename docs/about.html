@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — cubew</title>
+<style>
+  :root { --accent: #6cf; --accent-rgb: 100,200,255; }
+  body {
+    background: #0a0a0f; color: #ddd; font-family: monospace;
+    max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
+    line-height: 1.7;
+  }
+  h2 { color: var(--accent); border-bottom: 1px solid rgba(var(--accent-rgb),0.3);
+        padding-bottom: 6px; margin-top: 2.2em; }
+  h2:first-of-type { margin-top: 0; }
+  a { color: var(--accent); }
+  code { background: #12121a; padding: 1px 6px; border-radius: 4px;
+          border: 1px solid rgba(var(--accent-rgb),0.25); }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.35em 0; }
+  .lang-nav { margin-bottom: 2em; font-size: 0.9em; }
+  .lang-nav a { margin-right: 10px; text-decoration: none; }
+  .lang-nav a.current { color: #fff; font-weight: bold; text-decoration: underline; }
+  .back-link { display: inline-block; margin-top: 3em; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<nav class="lang-nav"><a href="about.html" class="current">EN</a><a href="about.ja.html">日本語</a><a href="about.zh.html">中文</a><a href="about.fr.html">FR</a><a href="about.ko.html">한국어</a><a href="about.es.html">ES</a><a href="about.pt.html">PT</a><a href="about.de.html">DE</a><a href="about.ru.html">RU</a></nav>
+<h2>About This App</h2>
+<p>A 3x3 cube puzzle simulator that runs entirely in your browser. No install, no app store — just open this page and start playing right away.</p>
+<p>It supports a wide range of skill levels, from a step-by-step tutorial (LBL method) for those who don't know how to solve a cube, to analysis tools for advanced solvers looking to shave time off their solves.</p>
+<h2>What You Can Do</h2>
+<ul>
+<li>Intuitive controls — just swipe with your finger</li>
+<li>Learn the fundamentals through a step-by-step tutorial (supports 9 languages)</li>
+<li>Register any sequence of moves as a "command" and replay it with a single tap</li>
+<li>Automatic solving via an external solver</li>
+<li>Time tracking and rewind/replay of your move history</li>
+<li>Net (unfolded) diagram view, and free control of the camera angle</li>
+</ul>
+<h2>About This App's Safety</h2>
+<ul>
+<li>We put your enjoyment first: <strong>this app shows no ads whatsoever</strong>, and we have no plans to introduce any in the future</li>
+<li><strong>The only external communication this app makes is with a solver service that computes cube solutions.</strong> All that's sent is a string representing the cube's state — no name, device information, usage data, or any other personally identifying information is ever sent</li>
+<li><strong>Information stored only in your browser (localStorage)</strong> is limited to the following. All of it stays on your own device and is never sent anywhere:</li>
+<li>Settings such as speed, language, axis display, and command bindings</li>
+<li>High scores (recorded times)</li>
+<li>Tutorial progress</li>
+<li>No analytics or tracking of any kind is used</li>
+</ul>
+<h2>About the Author (itachiwalker)</h2>
+<ul>
+<li>GitHub: <code>github.com/itachiwalker</code></li>
+<li>The tutorial data (learning content) is published as open-source (OSS). Feel free to open an <a href="https://github.com/itachiwalker/cubew_tutorial/issues">Issue</a> on GitHub with suggestions or to point out mistakes</li>
+<li>For requests or bug reports about this app itself, please also use an <a href="https://github.com/itachiwalker/cubew/issues">Issue</a> on GitHub</li>
+</ul>
+<h2>Donations</h2>
+<p>This app is free and ad-free. It's developed and maintained as a personal hobby project, and donations are entirely optional. If you found it useful or fun, your support below would mean a lot.</p>
+<p><strong><a href="#">Coming soon</a></strong></p>
+<h2>Prohibited Uses</h2>
+<p>Please refrain from the following:</p>
+<ul>
+<li>Downloading this app's files and running them anywhere other than this service</li>
+<li>Modifying the source code, even for personal use</li>
+<li>Decompiling, disassembling, deobfuscating, or otherwise analyzing the app's internal structure</li>
+<li>Duplicating or redistributing this app</li>
+</ul>
+<p><em>This does not apply to the tutorial data (learning content), which is published as open source; the open-sourced portion is governed by its own separate license.</em></p>
+<p class="back-link"><a href="./index.html">← cubew</a></p>
+</body>
+</html>
