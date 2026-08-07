@@ -70,6 +70,19 @@
 <li>复制或再分发本应用</li>
 </ul>
 <p>※ 教程数据（学习内容）以MIT许可证单独公开，不受此限制。</p>
-<p class="back-link"><a href="./index.html">← 返回应用</a></p>
+<p class="back-link"><a href="./index.html" id="back-link">← 返回应用</a></p>
+<script>
+document.getElementById('back-link').addEventListener('click', function(e){
+  e.preventDefault();
+  // アプリ側からnew tabとして開かれた場合はタブごと閉じる。
+  // 直接URLを開いた・ブックマーク等でscript経由で開かれていない場合、
+  // window.close()はブラウザに無視される（エラーは出ない）ので、
+  // その場合はフォールバックとしてindex.htmlへ遷移する。
+  window.close();
+  setTimeout(function(){
+    location.href = './index.html';
+  }, 300);
+});
+</script>
 </body>
 </html>

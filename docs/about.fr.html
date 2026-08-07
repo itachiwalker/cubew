@@ -70,6 +70,19 @@
 <li>Dupliquer ou redistribuer cette application</li>
 </ul>
 <p><em>Les données du tutoriel (contenu pédagogique) sont publiées séparément sous licence MIT et ne sont pas soumises à cette restriction.</em></p>
-<p class="back-link"><a href="./index.html">← Retour à l'application</a></p>
+<p class="back-link"><a href="./index.html" id="back-link">← Retour à l'application</a></p>
+<script>
+document.getElementById('back-link').addEventListener('click', function(e){
+  e.preventDefault();
+  // アプリ側からnew tabとして開かれた場合はタブごと閉じる。
+  // 直接URLを開いた・ブックマーク等でscript経由で開かれていない場合、
+  // window.close()はブラウザに無視される（エラーは出ない）ので、
+  // その場合はフォールバックとしてindex.htmlへ遷移する。
+  window.close();
+  setTimeout(function(){
+    location.href = './index.html';
+  }, 300);
+});
+</script>
 </body>
 </html>
