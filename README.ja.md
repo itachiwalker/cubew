@@ -5,6 +5,9 @@
 
 **現在のバージョン: v3.47.11**
 
+<!-- TODO: 下記のscreenshot.pngを実際のスクリーンショット画像に差し替えてください（cubewリポジトリ直下に配置） -->
+![cubewのスクリーンショット](screenshot.png)
+
 ---
 
 ## 🚀 起動方法
@@ -86,45 +89,45 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 
 | ボタン | 機能 |
 |--------|------|
-| ⏴⏵ | 逆再生 / 順再生（履歴の自動移動） |
-| ⏮⏪⏩⏭ | 履歴の先頭/前/次/末尾へ移動 |
+| <img src="icons/icon-rev.svg" width="18" align="absmiddle"> ⏴ / <img src="icons/icon-play.svg" width="18" align="absmiddle"> ⏵ | 逆再生 / 順再生（履歴の自動移動） |
+| <img src="icons/icon-first.svg" width="18" align="absmiddle"> ⏮ <img src="icons/icon-back.svg" width="18" align="absmiddle"> ⏪ <img src="icons/icon-go.svg" width="18" align="absmiddle"> ⏩ <img src="icons/icon-last.svg" width="18" align="absmiddle"> ⏭ | 履歴の先頭/前/次/末尾へ移動 |
 
 ### 右パネル
 
 | ボタン | 機能 |
 |--------|------|
-| ⊞ | リセット（チュートリアル中は常にDisabled。「⏴前へ」に統合） |
-| ⤮ | スクランブル |
-| ⊡ | FACE補正 |
-| ⚙ | キューブ状態設定（設定／履歴タブ） |
-| ☊ | 外部ソルバー（状態検証→確認ダイアログ→自動実行） |
-| ⌖ | コマンド設定ダイアログ |
+| <img src="icons/icon-reset.svg" width="18" align="absmiddle"> ⊞ | リセット（チュートリアル中は常にDisabled。「⏴前へ」に統合） |
+| <img src="icons/icon-shuffle.svg" width="18" align="absmiddle"> ⤮ | スクランブル |
+| <img src="icons/icon-face.svg" width="18" align="absmiddle"> ⊡ | FACE補正 |
+| <img src="icons/icon-set.svg" width="18" align="absmiddle"> ⚙ | キューブ状態設定（設定／履歴タブ） |
+| <img src="icons/icon-solve.svg" width="18" align="absmiddle"> ☊ | 外部ソルバー（状態検証→確認ダイアログ→自動実行） |
+| <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> ⌖ | コマンド設定ダイアログ |
 
 ### 左パネル
 
 | ボタン | 機能 |
 |--------|------|
-| ⧉ | 展開図の表示/非表示（3パターン循環） |
-| ⌨ | 回転ボタンパッドの表示/非表示 |
-| ⬱ | 次の1回のスワイプをワイド回転にする |
-| ⮨ | 次の1回のスワイプを2倍回転にする |
+| <img src="icons/icon-net.svg" width="18" align="absmiddle"> ⧉ | 展開図の表示/非表示（3パターン循環） |
+| <img src="icons/icon-kbd.svg" width="18" align="absmiddle"> ⌨ | 回転ボタンパッドの表示/非表示 |
+| <img src="icons/icon-wide.svg" width="18" align="absmiddle"> ⬱ | 次の1回のスワイプをワイド回転にする |
+| <img src="icons/icon-double.svg" width="18" align="absmiddle"> ⮨ | 次の1回のスワイプを2倍回転にする |
 
 ### 下部パネル
 
 | ボタン | 機能 |
 |--------|------|
-| ? | ツールチップ表示（4段階トグル）。ロード時は自動で案内表示。チュートリアル中はDisabled |
-| ⥮ | 視点を縦方向に往復 |
-| ⌂ | 視点を定位置に戻す |
-| ⟳ | 視点を横方向に1周 |
-| ⫯ | ピン留め（自由/コマンド/試験ブラウジング中のみ表示）。ONで⏮⏪⏩⏭⏴⏵操作時に実操作時の視点を再現 |
+| <img src="icons/icon-help.svg" width="18" align="absmiddle"> ? | ツールチップ表示（4段階トグル）。ロード時は自動で案内表示。チュートリアル中はDisabled |
+| <img src="icons/icon-rock.svg" width="18" align="absmiddle"> ⥮ | 視点を縦方向に往復 |
+| <img src="icons/icon-home.svg" width="18" align="absmiddle"> ⌂ | 視点を定位置に戻す |
+| <img src="icons/icon-spin.svg" width="18" align="absmiddle"> ⟳ | 視点を横方向に1周 |
+| <img src="icons/icon-campin.svg" width="18" align="absmiddle"> ⫯ | ピン留め（自由/コマンド/試験ブラウジング中のみ表示）。ONで⏮⏪⏩⏭⏴⏵操作時に実操作時の視点を再現 |
 | 📚 / 🚪 | チュートリアル一覧を開く / 終了（同じスロットで排他表示）。モードに応じてEnabled/Disabled/非表示が切り替わる（③④記録中は非表示、②自由ブラウジング・⑤SbSガイド中・⑧試験ブラウジング中はDisabled） |
 
 ### 画面左端・右端（縦積み）
 
 | ボタン | 機能 |
 |--------|------|
-| ≡ | メニュー（設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス） |
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> ≡ | メニュー（設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス） |
 
 ---
 

@@ -5,6 +5,9 @@ Deployed on [GitHub Pages](https://itachiwalker.github.io/cubew).
 
 **Current version: v3.47.11**
 
+<!-- TODO: replace screenshot.png below with an actual screenshot (place it at the root of the cubew repo) -->
+![cubew screenshot](screenshot.png)
+
 ---
 
 ## 🚀 Getting Started
@@ -86,45 +89,45 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 
 | Button | Function |
 |--------|------|
-| ⏴⏵ | Reverse-play / play (auto-step through history) |
-| ⏮⏪⏩⏭ | Jump to first/previous/next/last in history |
+| <img src="icons/icon-rev.svg" width="18" align="absmiddle"> ⏴ / <img src="icons/icon-play.svg" width="18" align="absmiddle"> ⏵ | Reverse-play / play (auto-step through history) |
+| <img src="icons/icon-first.svg" width="18" align="absmiddle"> ⏮ <img src="icons/icon-back.svg" width="18" align="absmiddle"> ⏪ <img src="icons/icon-go.svg" width="18" align="absmiddle"> ⏩ <img src="icons/icon-last.svg" width="18" align="absmiddle"> ⏭ | Jump to first/previous/next/last in history |
 
 ### Right panel
 
 | Button | Function |
 |--------|------|
-| ⊞ | Reset (always disabled during a tutorial; merged into "⏴ Back") |
-| ⤮ | Scramble |
-| ⊡ | Face correction |
-| ⚙ | Cube state editor (Settings/History tabs) |
-| ☊ | External solver (validate → confirm → auto-run) |
-| ⌖ | Command editor dialog |
+| <img src="icons/icon-reset.svg" width="18" align="absmiddle"> ⊞ | Reset (always disabled during a tutorial; merged into "⏴ Back") |
+| <img src="icons/icon-shuffle.svg" width="18" align="absmiddle"> ⤮ | Scramble |
+| <img src="icons/icon-face.svg" width="18" align="absmiddle"> ⊡ | Face correction |
+| <img src="icons/icon-set.svg" width="18" align="absmiddle"> ⚙ | Cube state editor (Settings/History tabs) |
+| <img src="icons/icon-solve.svg" width="18" align="absmiddle"> ☊ | External solver (validate → confirm → auto-run) |
+| <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> ⌖ | Command editor dialog |
 
 ### Left panel
 
 | Button | Function |
 |--------|------|
-| ⧉ | Show/hide net view (cycles through 3 layouts) |
-| ⌨ | Show/hide the rotation button pad |
-| ⬱ | Make the next single swipe a wide move |
-| ⮨ | Make the next single swipe a double move |
+| <img src="icons/icon-net.svg" width="18" align="absmiddle"> ⧉ | Show/hide net view (cycles through 3 layouts) |
+| <img src="icons/icon-kbd.svg" width="18" align="absmiddle"> ⌨ | Show/hide the rotation button pad |
+| <img src="icons/icon-wide.svg" width="18" align="absmiddle"> ⬱ | Make the next single swipe a wide move |
+| <img src="icons/icon-double.svg" width="18" align="absmiddle"> ⮨ | Make the next single swipe a double move |
 
 ### Bottom panel
 
 | Button | Function |
 |--------|------|
-| ? | Show tooltip help (4-stage toggle). Shown automatically on load. Disabled during a tutorial |
-| ⥮ | Sweep the camera vertically |
-| ⌂ | Return the camera to its default position |
-| ⟳ | Sweep the camera horizontally, full circle |
-| ⫯ | Pin the camera (shown only while browsing freely/commands/exams). When on, ⏮⏪⏩⏭⏴⏵ recreate the camera angle at the moment each move was actually made |
+| <img src="icons/icon-help.svg" width="18" align="absmiddle"> ? | Show tooltip help (4-stage toggle). Shown automatically on load. Disabled during a tutorial |
+| <img src="icons/icon-rock.svg" width="18" align="absmiddle"> ⥮ | Sweep the camera vertically |
+| <img src="icons/icon-home.svg" width="18" align="absmiddle"> ⌂ | Return the camera to its default position |
+| <img src="icons/icon-spin.svg" width="18" align="absmiddle"> ⟳ | Sweep the camera horizontally, full circle |
+| <img src="icons/icon-campin.svg" width="18" align="absmiddle"> ⫯ | Pin the camera (shown only while browsing freely/commands/exams). When on, ⏮⏪⏩⏭⏴⏵ recreate the camera angle at the moment each move was actually made |
 | 📚 / 🚪 | Open the tutorial list / exit it (shown in the same slot, mutually exclusive). Enabled/disabled/hidden depending on the current mode (hidden while recording, disabled while browsing freely, in SbS guide mode, or browsing an exam) |
 
 ### Screen edges (stacked vertically)
 
 | Button | Function |
 |--------|------|
-| ≡ | Menu (settings, share, QR code, help, high scores, license) |
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> ≡ | Menu (settings, share, QR code, help, high scores, license) |
 
 ---
 
