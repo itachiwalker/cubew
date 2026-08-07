@@ -140,7 +140,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | Confetti library | canvas-confetti 1.9.4 (ISC) |
 | Tooltips | Tippy.js 6.3.7 + Popper.js 2.11.8 (MIT, restyled with the app's own dark theme) |
 | QR code | qrcode.js 1.4.4 (soldair, MIT) |
-| Icons | Hand-drawn SVGs (currentColor) for the main buttons. Navigation buttons (<img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">⏸) are also being converted to SVG to avoid rendering differences across platforms |
+| Icons | Hand-drawn SVGs (currentColor) for the main buttons. Navigation buttons (<img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"><img src="icons/icon-pause.svg" width="14" align="absmiddle">) are also being converted to SVG to avoid rendering differences across platforms |
 | Font | Noto Sans Symbols 2 (Google Fonts / OFL 1.1) |
 | File structure | A single HTML file |
 

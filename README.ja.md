@@ -140,7 +140,7 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | 花火ライブラリ | canvas-confetti 1.9.4（ISC） |
 | ツールチップ | Tippy.js 6.3.7 + Popper.js 2.11.8（MIT、アプリ独自のダークテーマに変更済み） |
 | QRコード | qrcode.js 1.4.4（soldair、MIT） |
-| アイコン | 主要ボタンは手描きSVG（currentColor）。ナビゲーションボタン（<img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">⏸）も含め、プラットフォーム間の描画差異を避けるため順次SVG化 |
+| アイコン | 主要ボタンは手描きSVG（currentColor）。ナビゲーションボタン（<img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"><img src="icons/icon-pause.svg" width="14" align="absmiddle">）も含め、プラットフォーム間の描画差異を避けるため順次SVG化 |
 | フォント | Noto Sans Symbols 2（Google Fonts / OFL 1.1） |
 | ファイル構成 | HTMLファイル単体 |
 
