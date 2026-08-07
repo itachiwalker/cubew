@@ -1,7 +1,7 @@
 <svg width="22" height="22" viewBox="0 0 26.458333 26.458334" xmlns="http://www.w3.org/2000/svg" style="display:block"><g
     
      transform="translate(-26.458332)">
-    <path fill="#6cf"
+    <path fill="#000"
        d="M 31.749987,21.166677 V 5.2916544 H 47.62501 V 21.166677 Z M 46.31103,13.886156 h -5.953133 v 5.953134 h 5.953133 z m -7.280521,5.953134 v -5.953134 h -5.953134 v 5.953134 z m -5.953134,-7.280522 h 5.953134 V 6.6056344 h -5.953134 z m 7.280522,0 H 46.31103 V 6.6056344 h -5.953133 z"
        id="text6"
        style="font-size:27.4595px;line-height:1.25;font-family:'Noto Sans Symbols 2';-inkscape-font-specification:'Noto Sans Symbols 2, Normal';stroke-width:0.286036"

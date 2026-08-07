@@ -22,33 +22,33 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | 機能 | 説明 |
 |------|------|
 | スワイプ回転 | 面をスワイプして直感的に回転。高速連続スワイプはバッファリングで取りこぼしなく処理 |
-| ⬱ワイド / ⮨ダブルトグル | 次の1回のスワイプ（キーボード操作含む）だけ、ワイド回転（Rw等）・2倍回転（U2等）を適用する一回限りのトグル |
+| <img src="icons/icon-wide.svg" width="14" align="absmiddle">ワイド / <img src="icons/icon-double.svg" width="14" align="absmiddle">ダブルトグル | 次の1回のスワイプ（キーボード操作含む）だけ、ワイド回転（Rw等）・2倍回転（U2等）を適用する一回限りのトグル |
 | ダブルタップコマンド | 各面のマスをダブルタップで登録済みコマンドを自動実行。Undo（背景ダブルタップ）は1回でコマンド全手数分を一括で戻る |
-| コマンド設定（⌖） | 長押しで記録モードに入り、キューブ操作をコマンドとして登録。他面・左右対称・U面への自動コピー対応 |
+| コマンド設定（<img src="icons/icon-cmd.svg" width="14" align="absmiddle">） | 長押しで記録モードに入り、キューブ操作をコマンドとして登録。他面・左右対称・U面への自動コピー対応 |
 | スクランブル | 100手ランダム（前手と同じ面を除いた5面からランダム選択）・速度演出付き |
-| 履歴ナビゲーション | ⏴⏮⏪⏩⏭⏵ で自動再生・逆再生含む全履歴を操作。ナビゲーション中は次の手を矢印でキューブ上に表示 |
-| 視点ピン留め（⫯） | 自由/コマンド/試験ブラウジング中のみ表示。ON時、⏮⏪⏩⏭⏴⏵操作でその手を実際に操作した瞬間の視点を再現。オートプレイ中は背景ドラッグとカメラ系3ボタン（⌂⥮⟳）を自動的に無効化 |
-| 回転ボタンパッド（⌨） | U/D/E, R/L/M, F/B/S, x/y/z に加えワイド回転（Uw/Dw/Rw/Lw/Fw/Bw）も含む全6行のボタン群 |
+| 履歴ナビゲーション | <img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"> で自動再生・逆再生含む全履歴を操作。ナビゲーション中は次の手を矢印でキューブ上に表示 |
+| 視点ピン留め（<img src="icons/icon-campin.svg" width="14" align="absmiddle">） | 自由/コマンド/試験ブラウジング中のみ表示。ON時、<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作でその手を実際に操作した瞬間の視点を再現。オートプレイ中は背景ドラッグとカメラ系3ボタン（<img src="icons/icon-home.svg" width="14" align="absmiddle"><img src="icons/icon-rock.svg" width="14" align="absmiddle"><img src="icons/icon-spin.svg" width="14" align="absmiddle">）を自動的に無効化 |
+| 回転ボタンパッド（<img src="icons/icon-kbd.svg" width="14" align="absmiddle">） | U/D/E, R/L/M, F/B/S, x/y/z に加えワイド回転（Uw/Dw/Rw/Lw/Fw/Bw）も含む全6行のボタン群 |
 | ステップ実行（SbS） | SETダイアログで手順文字列を「Step by Step」モードで実行。矢印ガイドに従ってスワイプで1手ずつ進める |
-| 照準オーバーレイ（C_XX） | SbS手順中に指定マスに照準（⌖ = 円＋貫通十字線）を表示。ダブルタップまたは⏩でコマンドを自動実行 |
+| 照準オーバーレイ（C_XX） | SbS手順中に指定マスに照準（<img src="icons/icon-cmd.svg" width="14" align="absmiddle"> = 円＋貫通十字線）を表示。ダブルタップまたは<img src="icons/icon-go.svg" width="14" align="absmiddle">でコマンドを自動実行 |
 | ガイド矢印 | ナビゲーション・ステップ実行中にキューブ上に次の手をカラーフェードイン矢印で表示。180°は「×2」付き |
 | 視点指定（CAM） | SbS手順中に`CAM(θ,φ)`でカメラ視点を指定。直前に宣言された最も近いCAMがforward/reverse共通で使われ、同じCAMグループ内ではユーザーの手動視点調整が保持される |
-| FACE補正（⊡） | どの向きからでも正面=緑・上面=白に自動補正 |
-| キューブ状態設定（⚙） | タブ構成（設定／履歴）。設定タブはkociemba形式54文字での状態読み書き・コマンド実行（ワイルドカード W/w/面色小文字 対応）。履歴タブは初期状態文字列・回転コマンド文字列をコピーボタン付きで表示 |
-| 外部ソルバー（☊） | 状態検証・確認ダイアログを経て6面を自動で揃える。解法をカウントダウン後に自動実行 |
-| 試験モード | 初期状態＋完成系を指定して自由操作。完成系と一致したら「おめでとう」発動（試験モード中も⌨回転ボタンパッド使用可） |
+| FACE補正（<img src="icons/icon-face.svg" width="14" align="absmiddle">） | どの向きからでも正面=緑・上面=白に自動補正 |
+| キューブ状態設定（<img src="icons/icon-set.svg" width="14" align="absmiddle">） | タブ構成（設定／履歴）。設定タブはkociemba形式54文字での状態読み書き・コマンド実行（ワイルドカード W/w/面色小文字 対応）。履歴タブは初期状態文字列・回転コマンド文字列をコピーボタン付きで表示 |
+| 外部ソルバー（<img src="icons/icon-solve.svg" width="14" align="absmiddle">） | 状態検証・確認ダイアログを経て6面を自動で揃える。解法をカウントダウン後に自動実行 |
+| 試験モード | 初期状態＋完成系を指定して自由操作。完成系と一致したら「おめでとう」発動（試験モード中も<img src="icons/icon-kbd.svg" width="14" align="absmiddle">回転ボタンパッド使用可） |
 | ストップウォッチ | スクランブル後の最初の手動操作で自動開始・6面揃いで自動停止。停止時に順位表示（圏外含む）。白点滅中タップでハイスコア表示 |
 | ハイスコア | スクランブル後に6面揃えたタイムを上位10件保存。クリア後にハイスコア画面を自動表示・今回のタイムを強調 |
 | お祝い演出 | 6面揃えると花火・視点回転・メッセージ表示（9言語対応、長文は横スクロール） |
-| 展開図（⧉） | 常時表示、操作に連動してリアルタイム更新。3パターンのレイアウトを循環切替 |
-| チュートリアル | LBL法の段階的レッスン。矢印ガイド・照準・視点移動でステップごとに誘導。9言語対応。`?`隣の📚ボタンから起動。「⏴前へ」は進捗があれば現在のレッスン/試験をリセット、無ければ前の項目へ移動 |
-| コマンド一括登録 | チュートリアル一覧の各レベル見出しに「⌖ まとめて登録」ボタン。レベル内全レッスンのコマンドを一度に登録・矛盾検出（レッスン間で同じマスに異なる内容がある場合の作者向け警告） |
+| 展開図（<img src="icons/icon-net.svg" width="14" align="absmiddle">） | 常時表示、操作に連動してリアルタイム更新。3パターンのレイアウトを循環切替 |
+| チュートリアル | LBL法の段階的レッスン。矢印ガイド・照準・視点移動でステップごとに誘導。9言語対応。<img src="icons/icon-help.svg" width="14" align="absmiddle">隣の📚ボタンから起動。「<img src="icons/icon-rev.svg" width="14" align="absmiddle">前へ」は進捗があれば現在のレッスン/試験をリセット、無ければ前の項目へ移動 |
+| コマンド一括登録 | チュートリアル一覧の各レベル見出しに「<img src="icons/icon-cmd.svg" width="14" align="absmiddle"> まとめて登録」ボタン。レベル内全レッスンのコマンドを一度に登録・矛盾検出（レッスン間で同じマスに異なる内容がある場合の作者向け警告） |
 | チュートリアル記法 | `C_F3(seq)`=照準コマンド / `R(F)`=矢印面限定 / `CAM(θ,φ)`=視点移動（2引数） / `X2'`=方向付き180° |
-| シェア機能 | Web Share APIでアプリのURLを共有（≡メニュー）。ローカルファイル実行時（`file:`/`content:`/`blob:`）は自動的に非表示 |
-| QRコード表示 | 現在のURLをQRコードで表示（Web経由起動時のみ、≡メニュー） |
-| ≡ メニュー | 設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス |
+| シェア機能 | Web Share APIでアプリのURLを共有（<img src="icons/icon-menu.svg" width="14" align="absmiddle">メニュー）。ローカルファイル実行時（`file:`/`content:`/`blob:`）は自動的に非表示 |
+| QRコード表示 | 現在のURLをQRコードで表示（Web経由起動時のみ、<img src="icons/icon-menu.svg" width="14" align="absmiddle">メニュー） |
+| <img src="icons/icon-menu.svg" width="14" align="absmiddle"> メニュー | 設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス |
 | 設定画面 | 言語設定（9言語）・速度設定（4段階）・座標軸表示設定 |
-| ライセンス表示 | 使用OSSのライセンス全文を表示（≡ → ライセンス） |
+| ライセンス表示 | 使用OSSのライセンス全文を表示（<img src="icons/icon-menu.svg" width="14" align="absmiddle"> → ライセンス） |
 | ツールチップ（?） | 4段階トグル: 簡易ヘルプページ → 左パネル → 右パネル → 消去。ページロード時は自動で案内表示 |
 | 多言語対応 | 日本語・中文・Français・English・한국어・Español・Português・Deutsch・Русский（9言語） |
 | localStorage 保存 | 速度・言語・座標軸・コマンド設定・ピン留め設定・ハイスコアをブラウザ再起動後も保持 |
@@ -64,7 +64,7 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | キューブ面をスワイプ | その層を90度回転 |
 | キューブ面をダブルタップ | 登録済みコマンドを実行 |
 | キューブ面を長押し | コマンドを記録・登録 |
-| 背景をダブルタップ | Undo（自由操作中）/ ⏪1手前（ナビゲーション中）※⮌ボタン自体は非表示化済みだが機能は維持 |
+| 背景をダブルタップ | Undo（自由操作中）/ <img src="icons/icon-back.svg" width="14" align="absmiddle">1手前（ナビゲーション中）※<img src="icons/icon-undo.svg" width="14" align="absmiddle">ボタン自体は非表示化済みだが機能は維持 |
 | 背景をドラッグ | 視点を移動（アニメーション中も操作可。オートプレイ中かつピン留めONの場合は無効） |
 | 2本指ピンチ | ズームイン/アウト |
 | タイマー（白点滅中）をタップ | ハイスコア画面を表示 |
@@ -76,10 +76,10 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | u/U d/D f/F b/B l/L r/R | 各面を時計/反時計回り |
 | m/M e/E s/S | M/E/S層を時計/反時計回り |
 | x/X y/Y z/Z | キューブ全体をX/Y/Z軸で回転 |
-| ← / → | ブラウジング/SbS中に⏪/⏩ |
+| ← / → | ブラウジング/SbS中に<img src="icons/icon-back.svg" width="14" align="absmiddle">/<img src="icons/icon-go.svg" width="14" align="absmiddle"> |
 | h | 視点をホームに戻す |
-| w | ⬱（ワイド）トグルON/OFF |
-| 2 | ⮨（ダブル）トグルON/OFF |
+| w | <img src="icons/icon-wide.svg" width="14" align="absmiddle">（ワイド）トグルON/OFF |
+| 2 | <img src="icons/icon-double.svg" width="14" align="absmiddle">（ダブル）トグルON/OFF |
 
 ---
 
@@ -89,45 +89,45 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 
 | ボタン | 機能 |
 |--------|------|
-| <img src="icons/icon-rev.svg" width="18" align="absmiddle"> ⏴ / <img src="icons/icon-play.svg" width="18" align="absmiddle"> ⏵ | 逆再生 / 順再生（履歴の自動移動） |
-| <img src="icons/icon-first.svg" width="18" align="absmiddle"> ⏮ <img src="icons/icon-back.svg" width="18" align="absmiddle"> ⏪ <img src="icons/icon-go.svg" width="18" align="absmiddle"> ⏩ <img src="icons/icon-last.svg" width="18" align="absmiddle"> ⏭ | 履歴の先頭/前/次/末尾へ移動 |
+| <img src="icons/icon-rev.svg" width="18" align="absmiddle"> <img src="icons/icon-play.svg" width="18" align="absmiddle"> | 逆再生 / 順再生（履歴の自動移動） |
+| <img src="icons/icon-first.svg" width="18" align="absmiddle"> <img src="icons/icon-back.svg" width="18" align="absmiddle"> <img src="icons/icon-go.svg" width="18" align="absmiddle"> <img src="icons/icon-last.svg" width="18" align="absmiddle"> | 履歴の先頭/前/次/末尾へ移動 |
 
 ### 右パネル
 
 | ボタン | 機能 |
 |--------|------|
-| <img src="icons/icon-reset.svg" width="18" align="absmiddle"> ⊞ | リセット（チュートリアル中は常にDisabled。「⏴前へ」に統合） |
-| <img src="icons/icon-shuffle.svg" width="18" align="absmiddle"> ⤮ | スクランブル |
-| <img src="icons/icon-face.svg" width="18" align="absmiddle"> ⊡ | FACE補正 |
-| <img src="icons/icon-set.svg" width="18" align="absmiddle"> ⚙ | キューブ状態設定（設定／履歴タブ） |
-| <img src="icons/icon-solve.svg" width="18" align="absmiddle"> ☊ | 外部ソルバー（状態検証→確認ダイアログ→自動実行） |
-| <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> ⌖ | コマンド設定ダイアログ |
+| <img src="icons/icon-reset.svg" width="18" align="absmiddle"> | リセット（チュートリアル中は常にDisabled。「<img src="icons/icon-rev.svg" width="14" align="absmiddle">前へ」に統合） |
+| <img src="icons/icon-shuffle.svg" width="18" align="absmiddle"> | スクランブル |
+| <img src="icons/icon-face.svg" width="18" align="absmiddle"> | FACE補正 |
+| <img src="icons/icon-set.svg" width="18" align="absmiddle"> | キューブ状態設定（設定／履歴タブ） |
+| <img src="icons/icon-solve.svg" width="18" align="absmiddle"> | 外部ソルバー（状態検証→確認ダイアログ→自動実行） |
+| <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> | コマンド設定ダイアログ |
 
 ### 左パネル
 
 | ボタン | 機能 |
 |--------|------|
-| <img src="icons/icon-net.svg" width="18" align="absmiddle"> ⧉ | 展開図の表示/非表示（3パターン循環） |
-| <img src="icons/icon-kbd.svg" width="18" align="absmiddle"> ⌨ | 回転ボタンパッドの表示/非表示 |
-| <img src="icons/icon-wide.svg" width="18" align="absmiddle"> ⬱ | 次の1回のスワイプをワイド回転にする |
-| <img src="icons/icon-double.svg" width="18" align="absmiddle"> ⮨ | 次の1回のスワイプを2倍回転にする |
+| <img src="icons/icon-net.svg" width="18" align="absmiddle"> | 展開図の表示/非表示（3パターン循環） |
+| <img src="icons/icon-kbd.svg" width="18" align="absmiddle"> | 回転ボタンパッドの表示/非表示 |
+| <img src="icons/icon-wide.svg" width="18" align="absmiddle"> | 次の1回のスワイプをワイド回転にする |
+| <img src="icons/icon-double.svg" width="18" align="absmiddle"> | 次の1回のスワイプを2倍回転にする |
 
 ### 下部パネル
 
 | ボタン | 機能 |
 |--------|------|
-| <img src="icons/icon-help.svg" width="18" align="absmiddle"> ? | ツールチップ表示（4段階トグル）。ロード時は自動で案内表示。チュートリアル中はDisabled |
-| <img src="icons/icon-rock.svg" width="18" align="absmiddle"> ⥮ | 視点を縦方向に往復 |
-| <img src="icons/icon-home.svg" width="18" align="absmiddle"> ⌂ | 視点を定位置に戻す |
-| <img src="icons/icon-spin.svg" width="18" align="absmiddle"> ⟳ | 視点を横方向に1周 |
-| <img src="icons/icon-campin.svg" width="18" align="absmiddle"> ⫯ | ピン留め（自由/コマンド/試験ブラウジング中のみ表示）。ONで⏮⏪⏩⏭⏴⏵操作時に実操作時の視点を再現 |
+| <img src="icons/icon-help.svg" width="18" align="absmiddle"> | ツールチップ表示（4段階トグル）。ロード時は自動で案内表示。チュートリアル中はDisabled |
+| <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | 視点を縦方向に往復 |
+| <img src="icons/icon-home.svg" width="18" align="absmiddle"> | 視点を定位置に戻す |
+| <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | 視点を横方向に1周 |
+| <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | ピン留め（自由/コマンド/試験ブラウジング中のみ表示）。ONで<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作時に実操作時の視点を再現 |
 | 📚 / 🚪 | チュートリアル一覧を開く / 終了（同じスロットで排他表示）。モードに応じてEnabled/Disabled/非表示が切り替わる（③④記録中は非表示、②自由ブラウジング・⑤SbSガイド中・⑧試験ブラウジング中はDisabled） |
 
 ### 画面左端・右端（縦積み）
 
 | ボタン | 機能 |
 |--------|------|
-| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> ≡ | メニュー（設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス） |
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | メニュー（設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス） |
 
 ---
 
@@ -140,7 +140,7 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | 花火ライブラリ | canvas-confetti 1.9.4（ISC） |
 | ツールチップ | Tippy.js 6.3.7 + Popper.js 2.11.8（MIT、アプリ独自のダークテーマに変更済み） |
 | QRコード | qrcode.js 1.4.4（soldair、MIT） |
-| アイコン | 主要ボタンは手描きSVG（currentColor）。ナビゲーションボタン（⏴⏮⏪⏩⏭⏵⏸）も含め、プラットフォーム間の描画差異を避けるため順次SVG化 |
+| アイコン | 主要ボタンは手描きSVG（currentColor）。ナビゲーションボタン（<img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">⏸）も含め、プラットフォーム間の描画差異を避けるため順次SVG化 |
 | フォント | Noto Sans Symbols 2（Google Fonts / OFL 1.1） |
 | ファイル構成 | HTMLファイル単体 |
 

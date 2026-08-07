@@ -1,7 +1,7 @@
 <svg width="22" height="22" viewBox="0 0 26.458333 26.458334" xmlns="http://www.w3.org/2000/svg" style="display:block"><g
     
      transform="translate(-26.458332,-26.458332)">
-    <path fill="#6cf"
+    <path fill="#000"
        d="m 42.129636,40.951148 4.106977,4.095115 v -3.170412 l 1.457302,-1.453105 v 7.133426 h -7.154077 l 1.457314,-1.453105 h 3.179596 l -4.106977,-4.095115 z m -4.769393,-2.64201 -5.564293,-5.54822 1.059866,-1.056803 5.564292,5.54822 z M 32.855816,47.556172 31.79595,46.499368 45.176748,33.15722 h -3.179596 l -1.457314,-1.453105 h 7.154086 v 7.133425 l -1.457311,-1.453105 v -3.170411 z"
        id="text7-2-1-2"
        style="font-size:31.3369px;line-height:1.25;font-family:'Meiryo UI';-inkscape-font-specification:'Meiryo UI, Normal';stroke-width:0.207882"
