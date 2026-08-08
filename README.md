@@ -3,7 +3,7 @@
 A 3x3 cube puzzle simulator that runs in your browser.  
 Deployed on [GitHub Pages](https://itachiwalker.github.io/cubew).
 
-**Current version: v3.47.11**
+**Current version: v3.47.x**
 
 <!-- TODO: replace screenshot.png below with an actual screenshot (place it at the root of the cubew repo) -->
 ![cubew screenshot](screenshot.png)

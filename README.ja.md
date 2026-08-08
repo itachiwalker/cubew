@@ -3,7 +3,7 @@
 ブラウザで動作する3x3キューブパズルシミュレーターです。  
 [GitHub Pages](https://itachiwalker.github.io/cubew) にデプロイしています。
 
-**現在のバージョン: v3.47.11**
+**現在のバージョン: v3.47.x**
 
 <!-- TODO: 下記のscreenshot.pngを実際のスクリーンショット画像に差し替えてください（cubewリポジトリ直下に配置） -->
 ![cubewのスクリーンショット](screenshot.png)
