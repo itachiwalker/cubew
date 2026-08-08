@@ -25,9 +25,9 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | Wide (<img src="icons/icon-wide.svg" width="14" align="absmiddle">) / Double (<img src="icons/icon-double.svg" width="14" align="absmiddle">) toggle | A one-shot toggle that applies a wide move (e.g. Rw) or a double move (e.g. U2) to just the next swipe (including keyboard input) |
 | Double-tap commands | Double-tap any cell on a face to automatically run its registered command. Undo (double-tap the background) reverts an entire command's moves in a single step |
 | Command editor (<img src="icons/icon-cmd.svg" width="14" align="absmiddle">) | Long-press to enter recording mode and register a cube operation as a command, with automatic copying across other faces, left-right mirroring, and to the U face |
-| Scramble | 100 random moves (excluding the face used in the previous move, chosen from the remaining 5), with a speed effect |
+| Scramble (<img src="icons/icon-shuffle.svg" width="14" align="absmiddle">) | 100 random moves (excluding the face used in the previous move, chosen from the remaining 5), with a speed effect |
 | History navigation | Step through the full move history — including autoplay and reverse-play — with <img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">. The next move is shown as an arrow on the cube while navigating |
-| Pinned camera (<img src="icons/icon-campin.svg" width="14" align="absmiddle">) | Shown only while browsing freely, browsing a command, or browsing an exam. When on, <img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"> recreate the camera angle at the moment each move was actually made. During autoplay, background dragging and the three camera buttons (<img src="icons/icon-home.svg" width="14" align="absmiddle"><img src="icons/icon-rock.svg" width="14" align="absmiddle"><img src="icons/icon-spin.svg" width="14" align="absmiddle">) are automatically disabled |
+| Pinned camera (<img src="icons/icon-campin.svg" width="14" align="absmiddle">) | Shown only while browsing freely or browsing an exam. When on, <img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"> recreate the camera angle at the moment each move was actually made. During autoplay, background dragging and the three camera buttons (<img src="icons/icon-home.svg" width="14" align="absmiddle"><img src="icons/icon-rock.svg" width="14" align="absmiddle"><img src="icons/icon-spin.svg" width="14" align="absmiddle">) are automatically disabled |
 | Rotation button pad (<img src="icons/icon-kbd.svg" width="14" align="absmiddle">) | Six full rows of buttons: U/D/E, R/L/M, F/B/S, x/y/z, plus wide moves (Uw/Dw/Rw/Lw/Fw/Bw) |
 | Step-by-step (SbS) mode | Run a move sequence entered in the SET dialog in "Step by Step" mode, advancing one move at a time by swiping, guided by arrows |
 | Aiming overlay (C_XX) | During an SbS sequence, shows a reticle (a circle with crosshairs) on a specified cell; double-tap or <img src="icons/icon-go.svg" width="14" align="absmiddle"> automatically runs the associated command |
@@ -41,11 +41,11 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | High scores | Saves your top 10 solve times after each scramble. The high score screen is shown automatically after clearing, with this run's time highlighted |
 | Celebration effects | Confetti, a camera spin, and a message (in 9 languages; long text scrolls horizontally) when the cube is solved |
 | Net (unfolded) view (<img src="icons/icon-net.svg" width="14" align="absmiddle">) | Always visible, updates in real time as you move; cycles through 3 layout patterns |
-| Tutorial | Step-by-step lessons for the LBL method, guided by arrows, aiming reticles, and camera moves at every step. Available in 9 languages. Launched from the 📚 button next to <img src="icons/icon-help.svg" width="14" align="absmiddle">. "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back" resets the current lesson/exam if there's progress, or moves to the previous item if not |
+| Tutorial | Step-by-step lessons for the LBL method, guided by arrows, aiming reticles, and camera moves at every step. Available in 9 languages. Launched from the 📚 button in the bottom-right of the screen. "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back" resets the current lesson/exam if there's progress, or moves to the previous item if not |
 | Bulk command registration | Each level heading in the tutorial list has a "<img src="icons/icon-cmd.svg" width="14" align="absmiddle"> Register all" button, which registers every lesson's commands within that level at once, and detects conflicts (a warning, aimed at the author, when the same cell has different content across lessons) |
 | Tutorial notation | `C_F3(seq)` = aiming command / `R(F)` = arrow limited to one face / `CAM(θ,φ)` = camera move (2 arguments) / `X2'` = directional 180° |
-| Share | Share the app's URL via the Web Share API (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu). Automatically hidden when run from a local file (`file:` / `content:` / `blob:`) |
-| QR code | Display the current URL as a QR code (only when launched over the web, <img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu) |
+| Share | Share the app's URL via the Web Share API (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu) |
+| QR code | Display the current URL as a QR code (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu) |
 | <img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu | Settings, share, QR code, help, high scores, license |
 | Settings screen | Language (9 languages), speed (4 levels), and axis-display settings |
 | License display | Shows the full license text of the OSS used (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> → License) |
@@ -64,7 +64,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | Swipe a cube face | Rotates that layer 90° |
 | Double-tap a cube face | Runs its registered command |
 | Long-press a cube face | Records/registers a command |
-| Double-tap the background | Undo (in free mode) / step back one move (while navigating). Note: the <img src="icons/icon-undo.svg" width="14" align="absmiddle"> button itself has been hidden, but the function is still available |
+| Double-tap the background | Undo (in free mode) / step back one move (while navigating) |
 | Drag the background | Rotate the camera view (works even during animation. Disabled during autoplay if the pin is on) |
 | Two-finger pinch | Zoom in/out |
 | Tap the timer (while flashing white) | Shows the high score screen |
@@ -77,6 +77,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | m/M e/E s/S | Rotate the M/E/S layer clockwise/counter-clockwise |
 | x/X y/Y z/Z | Rotate the whole cube around the X/Y/Z axis |
 | ← / → | Step back/forward while browsing history or in SbS mode |
+| Back Space | Undo |
 | h | Return the camera to its home position |
 | w | Toggle the wide (<img src="icons/icon-wide.svg" width="14" align="absmiddle">) modifier on/off |
 | 2 | Toggle the double (<img src="icons/icon-double.svg" width="14" align="absmiddle">) modifier on/off |
@@ -109,8 +110,8 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 |--------|------|
 | <img src="icons/icon-net.svg" width="18" align="absmiddle"> | Show/hide net view (cycles through 3 layouts) |
 | <img src="icons/icon-kbd.svg" width="18" align="absmiddle"> | Show/hide the rotation button pad |
-| <img src="icons/icon-wide.svg" width="18" align="absmiddle"> | Make the next single swipe a wide move |
-| <img src="icons/icon-double.svg" width="18" align="absmiddle"> | Make the next single swipe a double move |
+| <img src="icons/icon-wide.svg" width="18" align="absmiddle"> | Make the next single swipe a wide move (swiping the middle layer rotates the whole cube — x/y/z — while swiping an edge slice performs a 2-layer move like Uw/Rw) |
+| <img src="icons/icon-double.svg" width="18" align="absmiddle"> | Make the next single swipe a double move (can be combined with ⬱) |
 
 ### Bottom panel
 
@@ -120,7 +121,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | Sweep the camera vertically |
 | <img src="icons/icon-home.svg" width="18" align="absmiddle"> | Return the camera to its default position |
 | <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | Sweep the camera horizontally, full circle |
-| <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | Pin the camera (shown only while browsing freely/commands/exams). When on, <img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"> recreate the camera angle at the moment each move was actually made |
+| <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | Pin the camera (shown only while browsing freely/exams). When on, <img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"> recreate the camera angle at the moment each move was actually made |
 | 📚 / 🚪 | Open the tutorial list / exit it (shown in the same slot, mutually exclusive). Enabled/disabled/hidden depending on the current mode (hidden while recording, disabled while browsing freely, in SbS guide mode, or browsing an exam) |
 
 ### Screen edges (stacked vertically)
@@ -128,6 +129,16 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | Button | Function |
 |--------|------|
 | <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | Menu (settings, share, QR code, help, high scores, license) |
+
+---
+
+## ⚙️ Settings
+
+| Item | Details |
+|------|------|
+| Language | Choose from 9 languages (Japanese, Chinese, French, English, Korean, Spanish, Portuguese, German, Russian) |
+| Speed | Choose the cube's rotation animation speed from 4 levels (Fastest, Fast, Medium (default), Slow) |
+| Axis display | Set which axes to show (y-axis only, or x/y/z axes) and when to show them (never, only while dragging the view, or always). x-axis = red, y-axis = white, z-axis = green |
 
 ---
 
@@ -140,7 +151,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | Confetti library | canvas-confetti 1.9.4 (ISC) |
 | Tooltips | Tippy.js 6.3.7 + Popper.js 2.11.8 (MIT, restyled with the app's own dark theme) |
 | QR code | qrcode.js 1.4.4 (soldair, MIT) |
-| Icons | Hand-drawn SVGs (currentColor) for the main buttons. Navigation buttons (<img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"><img src="icons/icon-pause.svg" width="14" align="absmiddle">) are also being converted to SVG to avoid rendering differences across platforms |
+| Icons | Main buttons are SVG to avoid rendering differences across platforms. Colors use `currentColor`, so they automatically follow the button's state (normal/hover/disabled, etc.) via CSS. Only the tutorial's two buttons (open/exit) are still pending conversion |
 | Font | Noto Sans Symbols 2 (Google Fonts / OFL 1.1) |
 | File structure | A single HTML file |
 
