@@ -116,18 +116,13 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 
 | Button | Function |
 |--------|------|
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | Menu (About, Share, QR code, Settings, Help, High Scores, Licenses) |
 | <img src="icons/icon-help.svg" width="18" align="absmiddle"> | Show tooltip help (4-stage toggle). Shown automatically on load. Disabled during a tutorial |
 | <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | Sweep the camera vertically |
 | <img src="icons/icon-home.svg" width="18" align="absmiddle"> | Return the camera to its default position |
 | <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | Sweep the camera horizontally, full circle |
 | <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | Pin the camera (shown only while browsing freely/exams). When on, <img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"> recreate the camera angle at the moment each move was actually made |
 | 📚 / 🚪 | Open the tutorial list / exit it (shown in the same slot, mutually exclusive). Enabled/disabled/hidden depending on the current mode (hidden while recording, disabled while browsing freely, in SbS guide mode, or browsing an exam) |
-
-### Screen edges (stacked vertically)
-
-| Button | Function |
-|--------|------|
-| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | Menu (settings, share, QR code, help, high scores, license) |
 
 ---
 

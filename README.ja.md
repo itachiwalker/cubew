@@ -116,18 +116,13 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 
 | ボタン | 機能 |
 |--------|------|
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | メニュー（このアプリについて・シェア・QRコード・設定・ヘルプ・ハイスコア・ライセンス） |
 | <img src="icons/icon-help.svg" width="18" align="absmiddle"> | ツールチップ表示（4段階トグル）。ロード時は自動で案内表示。チュートリアル中はDisabled |
 | <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | 視点を縦方向に往復 |
 | <img src="icons/icon-home.svg" width="18" align="absmiddle"> | 視点を定位置に戻す |
 | <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | 視点を横方向に1周 |
 | <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | ピン留め（自由/試験ブラウジング中のみ表示）。ONで<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作時に実操作時の視点を再現 |
 | 📚 / 🚪 | チュートリアル一覧を開く / 終了（同じスロットで排他表示）。モードに応じてEnabled/Disabled/非表示が切り替わる（③④記録中は非表示、②自由ブラウジング・⑤SbSガイド中・⑧試験ブラウジング中はDisabled） |
-
-### 画面左端・右端（縦積み）
-
-| ボタン | 機能 |
-|--------|------|
-| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | メニュー（設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス） |
 
 ---
 
