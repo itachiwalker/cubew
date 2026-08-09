@@ -48,7 +48,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | <img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu | Settings, share, QR code, help, high scores, license |
 | Settings screen | Language (9 languages), speed (4 levels), and axis-display settings |
 | License display | Shows the full license text of the OSS used (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> → License) |
-| Tooltip (?) | 4-stage toggle: quick help page → left panel → right panel → cleared. Shown automatically on page load |
+| Tooltip (<img src="icons/icon-help.svg" width="14" align="absmiddle">) | 4-stage toggle: quick help page → left panel → right panel → cleared. Shown automatically on page load |
 | Multi-language support | Japanese, Chinese, French, English, Korean, Spanish, Portuguese, German, Russian (9 languages) |
 | localStorage persistence | Speed, language, axis display, command bindings, pin setting, and high scores all persist across browser restarts |
 
