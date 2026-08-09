@@ -75,11 +75,11 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | u/U d/D f/F b/B l/L r/R | 各面を時計/反時計回り |
 | m/M e/E s/S | M/E/S層を時計/反時計回り |
 | x/X y/Y z/Z | キューブ全体をX/Y/Z軸で回転 |
-| ← / → | ブラウジング/SbS中に<img src="icons/icon-back.svg" width="14" align="absmiddle">/<img src="icons/icon-go.svg" width="14" align="absmiddle"> |
-| Back Space | Undo |
-| h | 視点をホームに戻す |
 | w | <img src="icons/icon-wide.svg" width="14" align="absmiddle">（ワイド）トグルON/OFF |
 | 2 | <img src="icons/icon-double.svg" width="14" align="absmiddle">（ダブル）トグルON/OFF |
+| Back Space | Undo |
+| h | 視点をホームに戻す |
+| ← / → | ブラウジング/SbS中に<img src="icons/icon-back.svg" width="14" align="absmiddle">/<img src="icons/icon-go.svg" width="14" align="absmiddle"> |
 
 ---
 
