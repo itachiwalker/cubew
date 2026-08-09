@@ -48,7 +48,7 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | <img src="icons/icon-menu.svg" width="14" align="absmiddle"> メニュー | 設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス |
 | 設定画面 | 言語設定（9言語）・速度設定（4段階）・座標軸表示設定 |
 | ライセンス表示 | 使用OSSのライセンス全文を表示（<img src="icons/icon-menu.svg" width="14" align="absmiddle"> → ライセンス） |
-| ツールチップ（?） | 4段階トグル: 簡易ヘルプページ → 左パネル → 右パネル → 消去。ページロード時は自動で案内表示 |
+| ツールチップ（<img src="icons/icon-help.svg" width="14" align="absmiddle">） | 4段階トグル: 簡易ヘルプページ → 左パネル → 右パネル → 消去。ページロード時は自動で案内表示 |
 | 多言語対応 | 日本語・中文・Français・English・한국어・Español・Português・Deutsch・Русский（9言語） |
 | localStorage 保存 | 速度・言語・座標軸・コマンド設定・ピン留め設定・ハイスコアをブラウザ再起動後も保持 |
 
