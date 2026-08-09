@@ -75,11 +75,11 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | u/U d/D f/F b/B l/L r/R | Rotate each face clockwise/counter-clockwise |
 | m/M e/E s/S | Rotate the M/E/S layer clockwise/counter-clockwise |
 | x/X y/Y z/Z | Rotate the whole cube around the X/Y/Z axis |
-| ← / → | Step back/forward while browsing history or in SbS mode |
-| Back Space | Undo |
-| h | Return the camera to its home position |
 | w | Toggle the wide (<img src="icons/icon-wide.svg" width="14" align="absmiddle">) modifier on/off |
 | 2 | Toggle the double (<img src="icons/icon-double.svg" width="14" align="absmiddle">) modifier on/off |
+| Back Space | Undo |
+| h | Return the camera to its home position |
+| ← / → | Step back/forward while browsing history or in SbS mode |
 
 ---
 
