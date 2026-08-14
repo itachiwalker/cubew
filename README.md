@@ -136,6 +136,22 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 
 ---
 
+## 🔀 Auto-execute vs. Sbs (Step-by-step)
+
+The SET dialog's (<img src="icons/icon-set.svg" width="14" align="absmiddle">) "Execution mode" lets you choose how move commands are run. **The state-string format is identical for both modes** (`U R F D L B u r f d l b W w`), but **the move-command syntax differs**.
+
+| | Auto-execute | Sbs (Step-by-step) |
+|---|---|---|
+| Basic moves (`U` `R'` `F2` `Uw2'`, etc.) | ✅ | ✅ |
+| `CAM(θ,φ)` (camera movement) | ❌ (syntax error) | ✅ |
+| `C_Xn` / `C_Xn(seq)` (aiming commands) | ❌ (syntax error) | ✅ |
+| `U(F)`, etc. (limits the guide arrow to one face) | ❌ (syntax error) | ✅ |
+| How it runs | Executes the entire sequence immediately | Advances one move at a time by swiping, guided by arrows |
+
+During an Sbs run, if the move commands include at least one `CAM()`, the camera automatically follows that declared view (dragging and the camera buttons are disabled during autoplay). If there's no `CAM()` at all, the camera doesn't auto-follow, and you're free to move it manually, even during autoplay.
+
+---
+
 ## 🛠 Tech Stack
 
 | Item | Details |
