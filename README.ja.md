@@ -34,8 +34,9 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | ガイド矢印 | ナビゲーション・ステップ実行中にキューブ上に次の手をカラーフェードイン矢印で表示。180°は「×2」付き |
 | 視点指定（CAM） | SbS手順中に`CAM(θ,φ)`でカメラ視点を指定。直前に宣言された最も近いCAMがforward/reverse共通で使われ、同じCAMグループ内ではユーザーの手動視点調整が保持される |
 | FACE補正（<img src="icons/icon-face.svg" width="14" align="absmiddle">） | どの向きからでも正面=緑・上面=白に自動補正 |
-| キューブ状態設定（<img src="icons/icon-set.svg" width="14" align="absmiddle">） | タブ構成（設定／履歴）。設定タブはkociemba形式54文字での状態読み書き・コマンド実行（ワイルドカード W/w/面色小文字 対応）。履歴タブは初期状態文字列・回転コマンド文字列をコピーボタン付きで表示 |
+| キューブ状態設定（<img src="icons/icon-set.svg" width="14" align="absmiddle">） | タブ構成（設定／試験／履歴）。設定タブはkociemba形式54文字での状態読み書き・コマンド実行（ワイルドカード W/w/面色小文字 対応）。履歴タブは初期状態文字列・回転コマンド文字列をコピーボタン付きで表示 |
 | 外部ソルバー（<img src="icons/icon-solve.svg" width="14" align="absmiddle">） | 状態検証・確認ダイアログを経て6面を自動で揃える。解法をカウントダウン後に自動実行。サーバーの起動待ち（Render無料枠のスリープ復帰）のため、アプリ起動から約1分間は利用不可（起動中はカウントダウン付きトーストで表示）。また、1回使用すると次の利用まで1分間の間隔が必要 |
+| 試験モード（SET画面「試験」タブ） | 初期状態・ゴール状態を指定して自由に操作。初期状態欄はSET画面を開いた時点のキューブ状態で自動初期化。ゴール状態と一致すると自動でお祝い演出。専用の「最初からやり直す」ボタンで確認なしに初期状態へ即リセット可能。RESET（⊞）はモード終了（確認ダイアログ経由）として機能 |
 | ストップウォッチ | スクランブル後の最初の手動操作で自動開始・6面揃いで自動停止。停止時に順位表示（圏外含む）。白点滅中タップでハイスコア表示 |
 | ハイスコア | スクランブル後に6面揃えたタイムを上位10件保存。クリア後にハイスコア画面を自動表示・今回のタイムを強調 |
 | お祝い演出 | 6面揃えると花火・視点回転・メッセージ表示（9言語対応、長文は横スクロール） |
@@ -99,7 +100,7 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | <img src="icons/icon-reset.svg" width="18" align="absmiddle"> | リセット（チュートリアル中は常にDisabled。「<img src="icons/icon-rev.svg" width="14" align="absmiddle">前へ」に統合） |
 | <img src="icons/icon-shuffle.svg" width="18" align="absmiddle"> | スクランブル |
 | <img src="icons/icon-face.svg" width="18" align="absmiddle"> | FACE補正 |
-| <img src="icons/icon-set.svg" width="18" align="absmiddle"> | キューブ状態設定（設定／履歴タブ） |
+| <img src="icons/icon-set.svg" width="18" align="absmiddle"> | キューブ状態設定（設定／試験／履歴タブ） |
 | <img src="icons/icon-solve.svg" width="18" align="absmiddle"> | 外部ソルバー（状態検証→確認ダイアログ→自動実行） |
 | <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> | コマンド設定ダイアログ |
 
