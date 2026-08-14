@@ -34,8 +34,9 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | Guide arrows | Color fade-in arrows show the next move on the cube during navigation/step mode. 180° moves are marked "×2" |
 | Camera control (CAM) | Set the camera viewpoint during an SbS sequence with `CAM(θ,φ)`. The most recently declared CAM is shared between forward and reverse playback, and manual view adjustments are preserved within the same CAM group |
 | Face correction (<img src="icons/icon-face.svg" width="14" align="absmiddle">) | Automatically reorients the cube to green-front / white-up from any angle |
-| Cube state editor (<img src="icons/icon-set.svg" width="14" align="absmiddle">) | Tabbed (Settings / History). The Settings tab lets you read/write the cube's state as a 54-character kociemba-format string and run commands (with wildcard support: `W`/`w`/lowercase face letters). The History tab shows the initial state string and the move-command string, each with a copy button |
+| Cube state editor (<img src="icons/icon-set.svg" width="14" align="absmiddle">) | Tabbed (Settings / Exam / History). The Settings tab lets you read/write the cube's state as a 54-character kociemba-format string and run commands (with wildcard support: `W`/`w`/lowercase face letters). The History tab shows the initial state string and the move-command string, each with a copy button |
 | External solver (<img src="icons/icon-solve.svg" width="14" align="absmiddle">) | Validates the state, then — after a confirmation dialog — solves all six faces automatically. The solution runs automatically after a countdown. Unavailable for about the first minute after the app loads, while the server wakes from sleep (Render's free tier); a countdown toast is shown during this wait. After each use, there's also a 1-minute cooldown before it can be used again |
+| Exam mode (SET dialog's "Exam" tab) | Freely manipulate the cube from a given initial state toward a given goal state. The initial-state field is pre-filled with the cube's state at the moment the SET dialog was opened. Reaching the goal state triggers the celebration effect automatically. A dedicated "Start over" button resets to the initial state instantly, with no confirmation needed. RESET (⊞) now serves as "exit this mode" (behind a confirmation dialog) |
 | Stopwatch | Starts automatically on the first manual move after a scramble, stops automatically once solved. Your ranking is shown on stop (including "off the leaderboard"). Tap the time while it's flashing white to view high scores |
 | High scores | Saves your top 10 solve times after each scramble. The high score screen is shown automatically after clearing, with this run's time highlighted |
 | Celebration effects | Confetti, a camera spin, and a message (in 9 languages; long text scrolls horizontally) when the cube is solved |
@@ -99,7 +100,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | <img src="icons/icon-reset.svg" width="18" align="absmiddle"> | Reset (always disabled during a tutorial; merged into "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back") |
 | <img src="icons/icon-shuffle.svg" width="18" align="absmiddle"> | Scramble |
 | <img src="icons/icon-face.svg" width="18" align="absmiddle"> | Face correction |
-| <img src="icons/icon-set.svg" width="18" align="absmiddle"> | Cube state editor (Settings/History tabs) |
+| <img src="icons/icon-set.svg" width="18" align="absmiddle"> | Cube state editor (Settings/Exam/History tabs) |
 | <img src="icons/icon-solve.svg" width="18" align="absmiddle"> | External solver (validate → confirm → auto-run) |
 | <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> | Command editor dialog |
 
