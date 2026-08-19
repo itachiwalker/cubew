@@ -9,6 +9,20 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.47.48]-[3.47.57] - 2026-08 - Background/reload reliability, camera-follow controls
+
+### Fixed
+- The cube's 3D view could freeze after returning to the tab from a long time in the background (tab switch, other app, screen lock) — most noticeable on Android. Added WebGL context-loss recovery, plus a periodic safety check that force-resumes rendering if the normal recovery events don't fire in time (observed to be unreliable across browsers)
+- The Step-by-step "actively guiding" state used to keep showing "Follow the guide" the whole way through; it now shows a distinct "Step-by-step mode" label instead
+
+### Added
+- ⏵/⏴ (forward/reverse autoplay) are no longer disabled when already at the end/start of the move history — pressing them now wraps around: ⏵ jumps to the beginning and plays through to the end, ⏴ jumps to the end and plays back to the beginning
+- Standalone Step-by-step and standalone Exam mode now show a clear mode label ("Step-by-step mode" / "Exam mode") in the stopwatch area while active, temporarily replacing the personal-best-time display
+- Standalone Step-by-step sequences that use CAM() now show the ⫯ pin button, letting you turn camera-follow on/off during that session (previously camera-follow was always forced on with no way to disable it, and the pin button stayed hidden)
+- SET → History now offers a second, separately copyable move-command string that also includes CAM(θ,φ) markers (inserted wherever the camera view changed, plus the final view), for reproducing a free-rotation/browsing session's camera moves along with its moves
+- Auto-execute mode's move-command field now accepts CAM(θ,φ) tokens (previously Step-by-step-only), animating the camera when one is encountered — pairs with the new CAM-annotated history string above
+- After solving the cube, the celebration animation now returns to the home camera position before starting its horizontal spin (previously it spun from wherever the camera happened to be), and the spin now eases into a smooth stop instead of halting abruptly
+
 ## [3.47.42]-[3.47.47] - 2026-08 - Exam mode is now available outside tutorials
 
 ### Added
