@@ -9,6 +9,20 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.47.58]-[3.47.79] - 2026-08 - Auto-execute visibility, SET during Step-by-step/Exam
+
+### Added
+- The stopwatch area now shows "Auto-execute" (with the remaining move count) whenever a SET → Auto-execute run or an external-solver solve is in progress, through the pre-countdown wait, the countdown itself, and the actual playback
+- Auto-execute mode and the external solver now block double-tap commands, swipe rotations, and the on-screen rotation pad while running, matching the existing protection during Autoplay — previously these could interrupt an in-progress run partway through
+- SET can now be opened during a standalone (non-tutorial) Step-by-step run or Exam, showing a read-only History tab with the session's initial state and move-command strings — useful for grabbing progress mid-session. Settings and Exam tabs stay hidden in that case, since editing state or starting a new exam mid-session isn't meaningful
+- SET → History's move-command strings are shown truncated (first 5 ... last 5 moves) with a move-count suffix for readability; the copy buttons always copy the full string, and are disabled when there's no history yet
+- SET dialog's OK/Cancel buttons now stay visible at the bottom without needing to scroll past long move-command strings; the Command Settings dialog's footer spacing was tightened to match
+- The Settings tab's icon hints (copy / rotation pad / external solver) are now shown on demand via a dedicated hint button instead of automatically flashing on first open
+
+### Fixed
+- Fixed a bug where pressing OK while SET's History tab was active silently re-applied whatever was left in the (hidden) Settings tab's fields instead of doing nothing
+- Fixed a stopwatch display bug where, after an external-solver-driven solve finished, the stopwatch could get stuck showing stale "Auto-execute" text instead of resetting cleanly
+
 ## [3.47.48]-[3.47.57] - 2026-08 - Background/reload reliability, camera-follow controls
 
 ### Fixed
