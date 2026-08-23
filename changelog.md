@@ -9,6 +9,20 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.48.0]-[3.48.11] - 2026-08 - Solver wait visualization, Auto-execute lockdown, highscore replay
+
+### Added
+- Solve (external solver) and Ask solver (in SET) now show a thin progress bar under each button, filling down as the warmup/cooldown wait elapses, and are disabled for that duration — replaces the old countdown-only toast with a clear visual sense of how much longer to wait
+- While a SET → Auto-execute run or an external-solver solve is in progress, nearly every other control is now locked out (history navigation, net/rotation-pad toggles, shuffle, FACE, SET, Solve, Command Settings) to prevent a second conflicting action from being started mid-run. The net-diagram toggle and RESET stay available; pressing RESET cleanly aborts the run and resets the cube
+- The history nav bar now shows real progress (`done / total`) while Auto-execute or the solver's solve is actually playing back, instead of the otherwise-meaningless "same number twice" it would show during a run
+- Clearing the cube (real scramble → solve, not Auto-execute/solver-driven) now records the initial state and a CAM(θ,φ)-annotated move string alongside each Highscore entry (capped at 500 moves per entry to keep storage bounded), and a ▶ button appears next to eligible entries in the Highscore list — pressing it replays that exact solve as a Step-by-step session, camera moves included. Entries recorded before this update, or from unusually long solves past the cap, simply show no ▶ button
+
+### Fixed
+- Fixed a stopwatch label bug where the Auto-execute label could get stuck showing stale text with the wrong style after an external-solver-driven solve finished
+- Fixed the Auto-execute label/nav-bar progress display flashing through an intermediate, not-very-meaningful state during the external solver's FACE-correction and API-wait phases; both now consistently reflect the actual phase (FACE correction's own progress, then the real solve's progress once the solver responds) with no in-between flicker
+- Fixed SET's "Ask solver" button sometimes staying (or becoming) enabled when it shouldn't be — e.g. right after replaying a Highscore entry, or after solving the cube by hand and then closing/reopening SET — since its enabled state only accounted for the warmup/cooldown wait and not whether solving even makes sense right now
+- Fixed the stopwatch text shifting vertically by a pixel or two whenever its content included an icon in a different font (e.g. switching between "Step-by-step mode" and "Playing (⏸ to stop)") — the mixed font's line-height metrics were throwing off the line's vertical centering
+
 ## [3.47.58]-[3.47.79] - 2026-08 - Auto-execute visibility, SET during Step-by-step/Exam
 
 ### Added
