@@ -9,6 +9,18 @@ Version format: `X.Y.Z`
 
 ---
 
+---
+
+## [3.48.12]-[3.48.23] - 2026-08 - Highscore replay polish, dialog scrolling fixes
+
+### Added
+- Replaying a Highscore entry now shows that entry's title (auto-generated: date, move count, time) in the personal-best display area for the duration of the replay, instead of leaving it blank
+- The Highscore list now also shows each entry's move count, and a replayed solve's camera now ends at the home position rather than wherever it happened to be pointed at the moment of solving
+
+### Fixed
+- Fixed the Highscore and SET dialogs' footer buttons (Clear/Close, Cancel/OK) requiring a scroll to reach when the dialog's content was tall (a full 10-entry Highscore list, a long SET → History move string)
+- Fixed those same footer buttons visibly dragging along with the content on iOS Safari when overscrolling past the top or bottom of the dialog (a rubber-band-scroll/sticky-positioning interaction) — both dialogs now use the same scroll structure as the Help and Command Settings dialogs, which weren't affected
+
 ## [3.48.0]-[3.48.11] - 2026-08 - Solver wait visualization, Auto-execute lockdown, highscore replay
 
 ### Added
