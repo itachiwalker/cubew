@@ -1,6 +1,6 @@
 # 🎲 Cube Puzzle Simulator
 
-ブラウザで動作する3x3キューブパズルシミュレーターです。  
+ブラウザで動作する3x3キューブパズル（ルービックキューブやGANなど）のシミュレーターです。  
 [GitHub Pages](https://itachiwalker.github.io/cubew) にデプロイしています。
 
 **現在のバージョン: v3.48.x**

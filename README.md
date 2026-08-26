@@ -1,6 +1,6 @@
 # 🎲 Cube Puzzle Simulator
 
-A 3x3 cube puzzle simulator that runs in your browser.  
+A 3x3 cube puzzle (like Rubik's Cube or GAN) simulator that runs in your browser.  
 Deployed on [GitHub Pages](https://itachiwalker.github.io/cubew).
 
 **Current version: v3.48.x**
