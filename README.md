@@ -236,5 +236,3 @@ Please refrain from the following:
 - Duplicating or redistributing this app
 
 The tutorial data ([cubew_tutorial](https://github.com/itachiwalker/cubew_tutorial)) is published separately under the MIT License and is not subject to these restrictions.
-
-<img src="https://itachiwalker.goatcounter.com/count?p=/readme" alt="" width="1" height="1">
