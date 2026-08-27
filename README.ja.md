@@ -236,3 +236,5 @@ cube_solver_api/    (public, GPL-2.0ライセンス) ← 外部ソルバー（Re
 - 本アプリの複製・再配布
 
 ※ チュートリアルデータ（[cubew_tutorial](https://github.com/itachiwalker/cubew_tutorial)）はMITライセンスで別途公開しており、この制限の対象外です。
+
+<img src="https://itachiwalker.goatcounter.com/count?p=/readme.ja" alt="" width="1" height="1">
