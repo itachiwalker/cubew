@@ -1,0 +1,4 @@
+Sitemap: https://itachiwalker.github.io/cubew/sitemap.xml
+
+User-agent: *
+Disallow:
