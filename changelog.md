@@ -11,7 +11,20 @@ Version format: `X.Y.Z`
 
 ---
 
-## [3.48.12]-[3.48.23] - 2026-08 - Highscore replay polish, dialog scrolling fixes
+## [3.49.0]-[3.49.11] - 2026-08 - Command-aware history, replay-as-commands toggle
+
+### Added
+- `CAM(θ,φ)` values in generated move-command strings are now shorter and normalized (1 decimal place, angle wrapped into 0–360°) instead of carrying long decimals or values like 450° that were really just 90°
+- A third move-command string format is now available (SET → History, and used for Highscore replays): in addition to the plain and CAM-annotated forms, this one also reconstructs double-tap commands as `C_key(seq)` tokens instead of their loose constituent moves
+- While a double-tap command is running (free/exam mode), only its first move records the camera view — dragging the camera during the remaining moves of that command no longer gets misrecorded as a deliberate per-move view change; recording resumes normally on the very next move after the command finishes
+- New <img src="icons/icon-cmd.svg" width="14" align="absmiddle"> "replay commands" toggle button, shown paired with the <img src="icons/icon-campin.svg" width="14" align="absmiddle"> pin button while browsing freely/exams or during a standalone Step-by-step run (hidden during tutorial lessons, where commands always replay as commands regardless). Checked (default): ⏪/⏩ jump through an entire double-tap command in one press, double-tapping the target cell while browsing also advances through it, and forward autoplay briefly flashes ⌖ at a command's position. Unchecked: commands are stepped through move-by-move like any other rotation. Either button is now disabled (rather than hidden) when there's nothing of its kind — camera moves or commands — in the current history, so the pair always appears/disappears together
+
+### Fixed
+- Fixed the SET → History dialog's two existing move-command boxes having no visible gap between them, and reordered all four boxes (initial state, with-CAM-and-commands, with-CAM, plain) for a more sensible reading order
+- Fixed the ⫯/⌖ pair's layout balance: removed the width-matching spacer elements (which fell out of sync once two independently-shown buttons could appear) in favor of a divider that only shows alongside the pair itself
+- Fixed several gaps in the new toggle's behavior found during testing: the guide arrow not showing a command target (and instead requiring the move to be replayed as a loose rotation) while browsing free/exam history; the flash effect and guide display not covering free/exam browsing, only Step-by-step; double-tapping a command's target cell while browsing doing nothing; and a stray guide arrow being left on screen if the toggle was flipped mid-autoplay
+
+
 
 ### Added
 - Replaying a Highscore entry now shows that entry's title (auto-generated: date, move count, time) in the personal-best display area for the duration of the replay, instead of leaving it blank
