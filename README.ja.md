@@ -27,18 +27,19 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | コマンド設定（<img src="icons/icon-cmd.svg" width="14" align="absmiddle">） | 長押しで記録モードに入り、キューブ操作をコマンドとして登録。他面・左右対称・U面への自動コピー対応 |
 | スクランブル（<img src="icons/icon-shuffle.svg" width="14" align="absmiddle">） | 100手ランダム（前手と同じ面を除いた5面からランダム選択）・速度演出付き |
 | 履歴ナビゲーション | <img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"> で自動再生・逆再生含む全履歴を操作。ナビゲーション中は次の手を矢印でキューブ上に表示。末尾/先頭で順再生/逆再生を押すと、反対側から全履歴を再生する形でラップアラウンドする |
-| 視点ピン留め（<img src="icons/icon-campin.svg" width="14" align="absmiddle">） | 自由/試験ブラウジング中、または`CAM()`を使う非チュートリアルのステップ実行（SbS）中に表示。ON時、<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作でその手を実際に操作した瞬間の視点を再現（SbSの場合は宣言された`CAM()`視点）。オートプレイ中は背景ドラッグとカメラ系3ボタン（<img src="icons/icon-home.svg" width="14" align="absmiddle"><img src="icons/icon-rock.svg" width="14" align="absmiddle"><img src="icons/icon-spin.svg" width="14" align="absmiddle">）を自動的に無効化 |
+| 視点ピン留め（<img src="icons/icon-campin.svg" width="14" align="absmiddle">） | 自由/試験ブラウジング中、またはスタンドアロンのステップ実行（SbS）中に、下の「コマンド再現」ボタンとペアで表示（履歴に`CAM()`が無い場合はDisabled）。ON時、<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作でその手を実際に操作した瞬間の視点を再現（SbSの場合は宣言された`CAM()`視点）。オートプレイ中は背景ドラッグとカメラ系3ボタン（<img src="icons/icon-home.svg" width="14" align="absmiddle"><img src="icons/icon-rock.svg" width="14" align="absmiddle"><img src="icons/icon-spin.svg" width="14" align="absmiddle">）を自動的に無効化 |
+| コマンド再現（<img src="icons/icon-cmd.svg" width="14" align="absmiddle">） | 視点ピン留めボタンと同じ場面で、ペアで表示（履歴にダブルタップコマンド`C_Xn`が無い場合はDisabled）。チェック時（既定）は<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作でコマンドを1つの塊としてまとめて再現し、⏵自動再生中はその開始位置に⌖が一瞬光る。アンチェック時は、コマンドも他の手と同様に1手ずつバラして扱う |
 | 回転ボタンパッド（<img src="icons/icon-kbd.svg" width="14" align="absmiddle">） | U/D/E, R/L/M, F/B/S, x/y/z に加えワイド回転（Uw/Dw/Rw/Lw/Fw/Bw）も含む全6行のボタン群 |
 | ステップ実行（SbS） | SETダイアログで手順文字列を「Step by Step」モードで実行。矢印ガイドに従ってスワイプで1手ずつ進める |
 | 照準オーバーレイ（C_XX） | SbS手順中に指定マスに照準（<img src="icons/icon-cmd.svg" width="14" align="absmiddle"> = 円＋貫通十字線）を表示。ダブルタップまたは<img src="icons/icon-go.svg" width="14" align="absmiddle">でコマンドを自動実行 |
 | ガイド矢印 | ナビゲーション・ステップ実行中にキューブ上に次の手をカラーフェードイン矢印で表示。180°は「×2」付き |
 | 視点指定（CAM） | SbS手順中に`CAM(θ,φ)`でカメラ視点を指定。直前に宣言された最も近いCAMがforward/reverse共通で使われ、同じCAMグループ内ではユーザーの手動視点調整が保持される |
 | FACE補正（<img src="icons/icon-face.svg" width="14" align="absmiddle">） | どの向きからでも正面=緑・上面=白に自動補正 |
-| キューブ状態設定（<img src="icons/icon-set.svg" width="14" align="absmiddle">） | タブ構成（設定／試験／履歴）。設定タブはkociemba形式54文字での状態読み書き・コマンド実行（ワイルドカード W/w/面色小文字 対応）。履歴タブは初期状態文字列と、回転コマンド文字列2種類（通常版、および視点が変化した箇所に`CAM(θ,φ)`を挿入した版）を、それぞれ手数付きで省略表示しつつコピーボタン付きで表示（コピーは省略前の全文）。非チュートリアルのステップ実行（SbS）中・試験中も開くことができ、その場合は履歴タブのみ表示（進行中の状態把握用、閲覧専用。設定／試験タブは非表示）。SET→自動実行や外部ソルバーによる解法実行中は、ストップウォッチ欄に「自動実行」と表示され、ナビバーには実際の進捗（完了手数/総手数）が表示され、完了するまで他のほとんどの操作が無効化される |
+| キューブ状態設定（<img src="icons/icon-set.svg" width="14" align="absmiddle">） | タブ構成（設定／試験／履歴）。設定タブはkociemba形式54文字での状態読み書き・コマンド実行（ワイルドカード W/w/面色小文字 対応）。履歴タブは初期状態文字列と、回転コマンド文字列3種類（通常版、視点が変化した箇所に`CAM(θ,φ)`を挿入した版、さらにダブルタップコマンドを`C_key(seq)`として復元した版）を、それぞれ手数付きで省略表示しつつコピーボタン付きで表示（コピーは省略前の全文）。非チュートリアルのステップ実行（SbS）中・試験中も開くことができ、その場合は履歴タブのみ表示（進行中の状態把握用、閲覧専用。設定／試験タブは非表示）。SET→自動実行や外部ソルバーによる解法実行中は、ストップウォッチ欄に「自動実行」と表示され、ナビバーには実際の進捗（完了手数/総手数）が表示され、完了するまで他のほとんどの操作が無効化される |
 | 外部ソルバー（<img src="icons/icon-solve.svg" width="14" align="absmiddle">） | 状態検証・確認ダイアログを経て6面を自動で揃える。解法をカウントダウン後に自動実行。サーバーの起動待ち（Render無料枠のスリープ復帰）のため、アプリ起動から約1分間、および使用後1分間（クールダウン）は利用不可。この間、ボタン直下に細いプログレスバーが表示され、待ち時間ぶん減っていく（ボタンも無効化）。実際に解法を実行中は、他のほとんどの操作が無効化される（RESETのみ有効で、押すと中断できる） |
 | 試験モード（SET画面「試験」タブ） | 初期状態・ゴール状態を指定して自由に操作。初期状態欄はSET画面を開いた時点のキューブ状態で自動初期化。ゴール状態と一致すると自動でお祝い演出。専用の「最初からやり直す」ボタンで確認なしに初期状態へ即リセット可能。RESET（⊞）はモード終了（確認ダイアログ経由）として機能 |
 | ストップウォッチ | スクランブル後の最初の手動操作で自動開始・6面揃いで自動停止。停止時に順位表示（圏外含む）。白点滅中タップでハイスコア表示 |
-| ハイスコア | スクランブル後に6面揃えたタイムと手数を上位10件保存。クリア後にハイスコア画面を自動表示・今回のタイムを強調。500手以内で揃えた場合、該当行に<img src="icons/icon-play.svg" width="14" align="absmiddle">ボタンが表示され、押すとその解法をステップ実行（視点移動含む、最後はホーム視点で終了）として再生できる。再生中は、ベストタイムの表示位置にその解法のタイトル（日付・手数・タイム）が表示される |
+| ハイスコア | スクランブル後に6面揃えたタイムと手数を上位10件保存。クリア後にハイスコア画面を自動表示・今回のタイムを強調。500手以内で揃えた場合、該当行に<img src="icons/icon-play.svg" width="14" align="absmiddle">ボタンが表示され、押すとその解法をステップ実行（視点移動・ダブルタップコマンド含む、最後はホーム視点で終了）として再生できる。再生中は、ベストタイムの表示位置にその解法のタイトル（日付・手数・タイム）が表示される |
 | お祝い演出 | 6面揃えると花火・視点回転（まずホームポジションへ移動してから水平に1周、着地はスムーズに減速）・メッセージ表示（9言語対応、長文は横スクロール） |
 | 展開図（<img src="icons/icon-net.svg" width="14" align="absmiddle">） | 常時表示、操作に連動してリアルタイム更新。3パターンのレイアウトを循環切替 |
 | チュートリアル | LBL法の段階的レッスン・試験（初期状態→完成系を目指す自由操作）・用語解説の3種類のコンテンツで構成。矢印ガイド・照準・視点移動でステップごとに誘導。9言語対応。画面右下の📚ボタンから起動。「<img src="icons/icon-rev.svg" width="14" align="absmiddle">前へ」は進捗があれば現在のレッスン/試験をリセット、無ければ前の項目へ移動 |
@@ -122,7 +123,8 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | 視点を縦方向に往復 |
 | <img src="icons/icon-home.svg" width="18" align="absmiddle"> | 視点を定位置に戻す |
 | <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | 視点を横方向に1周 |
-| <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | ピン留め（自由/試験ブラウジング中、または`CAM()`を使う非チュートリアルのSbS中に表示）。ONで<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作時に実操作時の視点を再現 |
+| <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | ピン留め（下のボタンとペアで、自由/試験ブラウジング中またはスタンドアロンSbS中に表示。履歴に`CAM()`が無ければDisabled）。ONで<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作時に実操作時の視点を再現 |
+| <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> | コマンド再現（上のピン留めボタンと同じ場面でペアで表示。履歴にダブルタップコマンドが無ければDisabled） |
 | 📚 / 🚪 | チュートリアル一覧を開く / 終了（同じスロットで排他表示）。モードに応じてEnabled/Disabled/非表示が切り替わる（③④記録中は非表示、②自由ブラウジング・⑤SbSガイド中・⑧試験ブラウジング中はDisabled） |
 
 ---
@@ -154,7 +156,9 @@ SET画面（<img src="icons/icon-set.svg" width="14" align="absmiddle">）の「
 | `U(F)`等（ガイド矢印の表示面限定） | ❌（構文エラー） | ✅ |
 | 実行方法 | ボタン操作で即座に全手数を実行 | 矢印ガイドに従いスワイプで1手ずつ進める |
 
-Sbs実行中、回転コマンドに`CAM()`が1つでも含まれていれば、視点はその指定に自動追従します（オートプレイ中は背景ドラッグ・カメラ3ボタンが無効化）。`CAM()`が無ければ視点は自動追従せず、オートプレイ中でも自由に操作できます。SET画面から開始した非チュートリアルのSbSでは、`CAM()`を含む場合に<img src="icons/icon-campin.svg" width="14" align="absmiddle">ピン留めボタンが表示され、この自動追従のON/OFFを選べます（チュートリアルのレッスンは常に`CAM()`に追従し、ピン留めボタンは表示されません）。
+Sbs実行中、回転コマンドに`CAM()`が1つでも含まれていれば、視点はその指定に自動追従します（オートプレイ中は背景ドラッグ・カメラ3ボタンが無効化）。`CAM()`が無ければ視点は自動追従せず、オートプレイ中でも自由に操作できます。SET画面から開始した非チュートリアルのSbSでは<img src="icons/icon-campin.svg" width="14" align="absmiddle">ピン留めボタンが表示され、この自動追従のON/OFFを選べます（チュートリアルのレッスンは常に`CAM()`に追従し、ピン留めボタンは表示されません）。
+
+同様に、履歴にダブルタップコマンド（`C_Xn`/`C_Xn(seq)`）が1つでも含まれていれば、<img src="icons/icon-cmd.svg" width="14" align="absmiddle">「コマンド再現」ボタンが表示されます。ピン留めボタンとペアで、自由/試験ブラウジング中・スタンドアロンSbS実行中に表示され、視点・コマンドいずれも該当データが無い場合は非表示ではなくDisabled表示になります。チェック時（既定）はコマンドを1つの塊としてまとめて再現し、⏵自動再生中はその開始位置に⌖が一瞬光ります。アンチェック時は、コマンドも他の手と同様に1手ずつバラして扱います。チュートリアルのレッスンでは両ボタンとも非表示ですが、その効果（視点は常に追従・コマンドは常にコマンドとして再現）自体は有効なままです。
 
 SET→履歴タブの「CAM付き」回転コマンド文字列（上記キューブ状態設定を参照）は、どちらのモードの回転コマンド欄にも貼り付け可能です。自動実行モードでも、記録された視点移動をSbSと同じようにアニメーション付きで再現します。
 
