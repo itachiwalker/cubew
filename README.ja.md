@@ -125,7 +125,7 @@ GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.
 | <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | 視点を横方向に1周 |
 | <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | ピン留め（下のボタンとペアで、自由/試験ブラウジング中またはスタンドアロンSbS中に表示。履歴に`CAM()`が無ければDisabled）。ONで<img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle">操作時に実操作時の視点を再現 |
 | <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> | コマンド再現（上のピン留めボタンと同じ場面でペアで表示。履歴にダブルタップコマンドが無ければDisabled） |
-| 📚 / 🚪 | チュートリアル一覧を開く / 終了（同じスロットで排他表示）。モードに応じてEnabled/Disabled/非表示が切り替わる（③④記録中は非表示、②自由ブラウジング・⑤SbSガイド中・⑧試験ブラウジング中はDisabled） |
+| <img src="icons/icon-tutorial.svg" width="14" align="absmiddle"> / <img src="icons/icon-exit.svg" width="14" align="absmiddle"> | チュートリアル一覧を開く / 終了（同じスロットで排他表示）。モードに応じてEnabled/Disabled/非表示が切り替わる（③④記録中は非表示、②自由ブラウジング・⑤SbSガイド中・⑧試験ブラウジング中はDisabled） |
 
 ---
 

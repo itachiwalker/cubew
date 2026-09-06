@@ -125,7 +125,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | Sweep the camera horizontally, full circle |
 | <img src="icons/icon-campin.svg" width="18" align="absmiddle"> | Pin the camera (shown, paired with the button below, while browsing freely/exams or in a standalone Step-by-step run — disabled when there's no `CAM()` in history). When on, <img src="icons/icon-first.svg" width="14" align="absmiddle"><img src="icons/icon-back.svg" width="14" align="absmiddle"><img src="icons/icon-go.svg" width="14" align="absmiddle"><img src="icons/icon-last.svg" width="14" align="absmiddle"><img src="icons/icon-rev.svg" width="14" align="absmiddle"><img src="icons/icon-play.svg" width="14" align="absmiddle"> recreate the camera angle at the moment each move was actually made |
 | <img src="icons/icon-cmd.svg" width="18" align="absmiddle"> | Replay commands as commands (shown, paired with the pin button above, in the same situations — disabled when there's no double-tap command in history) |
-| 📚 / 🚪 | Open the tutorial list / exit it (shown in the same slot, mutually exclusive). Enabled/disabled/hidden depending on the current mode (hidden while recording, disabled while browsing freely, in SbS guide mode, or browsing an exam) |
+| <img src="icons/icon-tutorial.svg" width="14" align="absmiddle"> / <img src="icons/icon-exit.svg" width="14" align="absmiddle"> | Open the tutorial list / exit it (shown in the same slot, mutually exclusive). Enabled/disabled/hidden depending on the current mode (hidden while recording, disabled while browsing freely, in SbS guide mode, or browsing an exam) |
 
 ---
 

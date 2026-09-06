@@ -1,97 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google" content="notranslate">
-<title>About — cubew</title>
-<link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<style>
-  :root { --accent: #6cf; --accent-rgb: 100,200,255; }
-  body {
-    background: #0a0a0f; color: #ddd; font-family: monospace;
-    max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
-    line-height: 1.7;
-  }
-  h2 { color: var(--accent); border-bottom: 1px solid rgba(var(--accent-rgb),0.3);
-        padding-bottom: 6px; margin-top: 2.2em; }
-  h2:first-of-type { margin-top: 0; }
-  a { color: var(--accent); }
-  code { background: #12121a; padding: 1px 6px; border-radius: 4px;
-          border: 1px solid rgba(var(--accent-rgb),0.25); }
-  ul { padding-left: 1.3em; }
-  li { margin: 0.35em 0; }
-  .lang-nav { margin-bottom: 2em; font-size: 0.9em; }
-  .lang-nav a { margin-right: 10px; text-decoration: none; }
-  .lang-nav a.current { color: #fff; font-weight: bold; text-decoration: underline; }
-  .back-link { display: inline-block; margin-top: 3em; font-size: 0.9em; }
-</style>
-    <script data-goatcounter="https://itachiwalker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <meta charset="UTF-8">
+    <!-- ① 5秒後に新しいCloudflare PagesのURLへ自動ジャンプさせる -->
+    <meta http-equiv="refresh" content="5;url=https://cubew.itachiwalker.workers.dev/about.html">
+    <title>Site Moved</title>
 </head>
 <body>
-<nav class="lang-nav"><a href="about.html" class="current">EN</a><a href="about.ja.html">日本語</a><a href="about.zh.html">中文</a><a href="about.fr.html">FR</a><a href="about.ko.html">한국어</a><a href="about.es.html">ES</a><a href="about.pt.html">PT</a><a href="about.de.html">DE</a><a href="about.ru.html">RU</a></nav>
-<h2>About This App</h2>
-<p>A 3x3 cube puzzle simulator that runs entirely in your browser. No install, no app store — just open this page and start playing right away.</p>
-<p>It supports a wide range of skill levels, from a step-by-step tutorial (LBL method) for those who don't know how to solve a cube, to analysis tools for advanced solvers looking to shave time off their solves.</p>
-<h2>What You Can Do</h2>
-<ul>
-<li>Intuitive controls — just swipe with your finger</li>
-<li>Learn the fundamentals through a step-by-step tutorial (supports 9 languages)</li>
-<li>Register any sequence of moves as a "command" and replay it with a double-tap</li>
-<li>Automatic solving via an external solver</li>
-<li>Time tracking and rewind/replay of your move history</li>
-<li>Net (unfolded) diagram view, and free control of the camera angle</li>
-</ul>
-<p>See the <a href="https://github.com/itachiwalker/cubew/blob/main/README.md">README</a> for more details.</p>
-<h2>About This App's Safety</h2>
-<ul>
-<li>We put your enjoyment first: <strong>this app shows no ads whatsoever</strong>, and we have no plans to introduce any in the future</li>
-<li><strong>This app communicates with a solver service that computes cube solutions.</strong> All that's ever sent is a string representing the cube's state — no name, device information, usage data, or any other personally identifying information</li>
-<li>Analytics are handled without cookies or any personally identifying information — only anonymous, aggregate statistics like page views are collected</li>
-<li><strong>Information stored only in your browser (localStorage)</strong> is limited to the following. All of it stays on your own device and is never sent anywhere:<ul>
-<li>Settings such as speed, language, axis display, and command bindings</li>
-<li>High scores (recorded times)</li>
-<li>Tutorial progress</li>
-</ul>
-</li>
-</ul>
-<h2>About the Author (itachiwalker)</h2>
-<ul>
-<li>GitHub: <a href="https://github.com/itachiwalker">github.com/itachiwalker</a></li>
-<li>For requests or bug reports about this app, please use the <a href="https://github.com/itachiwalker/cubew/issues">Issues</a> page.</li>
-<li><a href="https://github.com/itachiwalker/cubew_tutorial/blob/main/README.md">The tutorial data (learning content)</a> is published as open source (OSS). Suggestions and corrections are welcome there too.</li>
-</ul>
-<h2>Donations</h2>
-<p>This app is free and ad-free. It's developed and maintained as a personal hobby project, and donations are entirely optional. If you found it useful or fun, your support below would mean a lot.</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-<script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'A0P624N2HV');kofiwidget2.draw();</script>
-
-<h2>Prohibited Uses</h2>
-<p>Please refrain from the following:</p>
-<ul>
-<li>Downloading this app's files and running them anywhere other than this service</li>
-<li>Modifying the source code, even for personal use</li>
-<li>Decompiling, disassembling, deobfuscating, or otherwise analyzing the app's internal structure</li>
-<li>Duplicating or redistributing this app</li>
-</ul>
-<p><em>The tutorial data (learning content) is published separately under the MIT License and is not subject to this restriction.</em></p>
-<p class="back-link"><a href="./index.html" id="back-link">← Back to app</a></p>
-<script>
-document.getElementById('back-link').addEventListener('click', function(e){
-  e.preventDefault();
-  // アプリ側からnew tabとして開かれた場合はタブごと閉じる。
-  // 直接URLを開いた・ブックマーク等でscript経由で開かれていない場合、
-  // window.close()はブラウザに無視される（エラーは出ない）ので、
-  // その場合はフォールバックとしてindex.htmlへ遷移する。
-  window.close();
-  setTimeout(function(){
-    location.href = './index.html';
-  }, 300);
-});
-</script>
+    <h1>This Site Has Moved</h1>
+    <p>This app has moved to a new URL.</p>
+    <!-- ② 自動ジャンプしない場合や、すぐに移動したい人のためのリンク -->
+    <p>You'll be redirected automatically in 5 seconds. If not, please click the link below.</p>
+    <p><a href="https://cubew.itachiwalker.workers.dev/about.html">The new app is here: https://cubew.itachiwalker.workers.dev/about.html</a></p>
 </body>
 </html>

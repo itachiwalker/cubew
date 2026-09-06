@@ -1,97 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google" content="notranslate">
-<title>Об этом приложении — cubew</title>
-<link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<style>
-  :root { --accent: #6cf; --accent-rgb: 100,200,255; }
-  body {
-    background: #0a0a0f; color: #ddd; font-family: monospace;
-    max-width: 720px; margin: 0 auto; padding: 24px 20px 64px;
-    line-height: 1.7;
-  }
-  h2 { color: var(--accent); border-bottom: 1px solid rgba(var(--accent-rgb),0.3);
-        padding-bottom: 6px; margin-top: 2.2em; }
-  h2:first-of-type { margin-top: 0; }
-  a { color: var(--accent); }
-  code { background: #12121a; padding: 1px 6px; border-radius: 4px;
-          border: 1px solid rgba(var(--accent-rgb),0.25); }
-  ul { padding-left: 1.3em; }
-  li { margin: 0.35em 0; }
-  .lang-nav { margin-bottom: 2em; font-size: 0.9em; }
-  .lang-nav a { margin-right: 10px; text-decoration: none; }
-  .lang-nav a.current { color: #fff; font-weight: bold; text-decoration: underline; }
-  .back-link { display: inline-block; margin-top: 3em; font-size: 0.9em; }
-</style>
-    <script data-goatcounter="https://itachiwalker.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <meta charset="UTF-8">
+    <!-- ① 5秒後に新しいCloudflare PagesのURLへ自動ジャンプさせる -->
+    <meta http-equiv="refresh" content="5;url=https://cubew.itachiwalker.workers.dev/about.ru.html">
+    <title>Сайт переехал</title>
 </head>
 <body>
-<nav class="lang-nav"><a href="about.html">EN</a><a href="about.ja.html">日本語</a><a href="about.zh.html">中文</a><a href="about.fr.html">FR</a><a href="about.ko.html">한국어</a><a href="about.es.html">ES</a><a href="about.pt.html">PT</a><a href="about.de.html">DE</a><a href="about.ru.html" class="current">RU</a></nav>
-<h2>Об этом приложении</h2>
-<p>Симулятор кубика Рубика 3x3, полностью работающий в браузере. Не требует установки, не нужно заходить в магазин приложений — просто откройте эту страницу и сразу начинайте играть.</p>
-<p>Приложение подходит для самых разных уровней: от пошагового обучения (метод LBL) для тех, кто не умеет собирать кубик, до инструментов анализа для продвинутых пользователей, желающих улучшить свой результат по времени.</p>
-<h2>Что умеет это приложение</h2>
-<ul>
-<li>Интуитивное управление — достаточно провести пальцем</li>
-<li>Пошаговое обучение с нуля до полного понимания метода сборки (поддерживается 9 языков)</li>
-<li>Возможность зарегистрировать любую последовательность ходов как «команду» и воспроизвести её двойным касанием</li>
-<li>Автоматическое решение с помощью внешнего решателя (solver)</li>
-<li>Запись времени и перемотка/повтор истории ходов</li>
-<li>Отображение развёртки кубика и свободное управление углом обзора</li>
-</ul>
-<p>Подробнее см. в <a href="https://github.com/itachiwalker/cubew/blob/main/README.md">README</a>.</p>
-<h2>О безопасности этого приложения</h2>
-<ul>
-<li>Мы ставим ваше удовольствие на первое место: <strong>это приложение никогда не показывает рекламу</strong>, и мы не планируем вводить её в будущем</li>
-<li><strong>Это приложение обращается к внешнему сервису (решателю), вычисляющему решение кубика, но передаётся только строка, описывающая состояние кубика.</strong> Имя, информация об устройстве, данные об использовании или любая другая информация, позволяющая идентифицировать вас лично, никогда не передаётся</li>
-<li>Анализ посещений ведётся без использования файлов cookie или какой-либо информации, позволяющей идентифицировать вас лично — собирается только анонимная агрегированная статистика, например количество просмотров страниц</li>
-<li><strong>Информация, сохраняемая только в вашем браузере (localStorage)</strong>, ограничивается следующим. Все эти данные остаются только на вашем устройстве и никуда не передаются:<ul>
-<li>Настройки скорости, языка, отображения осей, привязанных команд и т. д.</li>
-<li>Рекорды (зафиксированное время)</li>
-<li>Прогресс прохождения обучения</li>
-</ul>
-</li>
-</ul>
-<h2>Об авторе (itachiwalker)</h2>
-<ul>
-<li>GitHub: <a href="https://github.com/itachiwalker">github.com/itachiwalker</a></li>
-<li>Пожелания и сообщения об ошибках, касающиеся приложения, присылайте через <a href="https://github.com/itachiwalker/cubew/issues">Issues</a>.</li>
-<li><a href="https://github.com/itachiwalker/cubew_tutorial/blob/main/README.md">Данные обучающего курса (учебный контент)</a> опубликованы как открытый исходный код (OSS). Предложения по улучшению и сообщения об ошибках также можно оставлять там же.</li>
-</ul>
-<h2>О пожертвованиях</h2>
-<p>Это приложение бесплатно и не содержит рекламы. Разработка и поддержка ведутся как личный хобби-проект, а пожертвования являются полностью добровольными. Если вам показалось, что приложение было полезным или доставило удовольствие, ваша поддержка по ссылке ниже стала бы отличным стимулом для дальнейшей работы.</p>
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-<script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'A0P624N2HV');kofiwidget2.draw();</script>
-
-<h2>Запрещённые действия</h2>
-<p>Пожалуйста, воздержитесь от следующего:</p>
-<ul>
-<li>Скачивание файлов этого приложения и их запуск где-либо, кроме данного сервиса</li>
-<li>Изменение исходного кода, даже для личного использования</li>
-<li>Декомпиляция, дизассемблирование, снятие обфускации и иной анализ внутренней структуры приложения</li>
-<li>Копирование или распространение этого приложения</li>
-</ul>
-<p><em>Данные обучающего курса (учебный контент) публикуются отдельно по лицензии MIT и не подпадают под это ограничение.</em></p>
-<p class="back-link"><a href="./index.html" id="back-link">← Назад в приложение</a></p>
-<script>
-document.getElementById('back-link').addEventListener('click', function(e){
-  e.preventDefault();
-  // アプリ側からnew tabとして開かれた場合はタブごと閉じる。
-  // 直接URLを開いた・ブックマーク等でscript経由で開かれていない場合、
-  // window.close()はブラウザに無視される（エラーは出ない）ので、
-  // その場合はフォールバックとしてindex.htmlへ遷移する。
-  window.close();
-  setTimeout(function(){
-    location.href = './index.html';
-  }, 300);
-});
-</script>
+    <h1>Уведомление о переезде сайта</h1>
+    <p>Это приложение переехало на новый адрес.</p>
+    <!-- ② 自動ジャンプしない場合や、すぐに移動したい人のためのリンク -->
+    <p>Через 5 секунд вы будете перенаправлены автоматически. Если этого не произошло, перейдите по ссылке ниже.</p>
+    <p><a href="https://cubew.itachiwalker.workers.dev/about.ru.html">Новое приложение здесь: https://cubew.itachiwalker.workers.dev/about.ru.html</a></p>
 </body>
 </html>
