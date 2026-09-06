@@ -1,7 +1,7 @@
 # 🎲 Cube Puzzle Simulator
 
 ブラウザで動作する3x3キューブパズル（ルービックキューブやGANなど）のシミュレーターです。  
-[GitHub Pages](https://itachiwalker.github.io/cubew) にデプロイしています。
+[Cloudflare](https://cubew.itachiwalker.workers.dev) にデプロイしています。
 
 **現在のバージョン: v3.48.x**
 
@@ -12,7 +12,7 @@
 
 ## 🚀 起動方法
 
-GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.io/cubew) を開くだけで動作します。  
+[https://cubew.itachiwalker.workers.dev](https://cubew.itachiwalker.workers.dev) を開くだけで動作します。  
 動作確認済み：Windows (Firefox / Chrome) · Android (Chrome) · iPhone (Safari)
 
 ---
@@ -184,14 +184,14 @@ SET→履歴タブの「CAM付き」回転コマンド文字列（上記キュ�
 開発・公開のリポジトリを分けています。
 
 ```
-cubew/              (public, ライセンスなし＝全著作権留保) ← アプリ公開用（GitHub Pages）
+cubew/              (public, ライセンスなし＝全著作権留保) ← アプリ説明用
 cubew_tutorial/     (public, MITライセンス) ← チュートリアルデータ公開用
 cube_solver_api/    (public, GPL-2.0ライセンス) ← 外部ソルバー（Renderでホスティング）
 ```
 
 ### cubew（public）
 
-`index.html`・`favicon.svg`・`about.*.html`（「このアプリについて」9言語）・`tutorial/`一式。GitHub Pagesで公開。
+READMEの公開とIssue（ご要望・不具合報告）の受付が目的のリポジトリです。アプリ本体はCloudflareで公開しています（[https://cubew.itachiwalker.workers.dev](https://cubew.itachiwalker.workers.dev)）。
 
 ### cubew_tutorial（public、MIT）
 
@@ -228,7 +228,7 @@ cube_solver_api/    (public, GPL-2.0ライセンス) ← 外部ソルバー（Re
 
 ### できること
 
-- 本サービス（GitHub Pages）上で、本アプリを自由にご利用いただくこと
+- 本サービス（Cloudflare）上で、本アプリを自由にご利用いただくこと
 
 ### 禁止事項
 

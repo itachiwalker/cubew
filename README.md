@@ -1,7 +1,7 @@
 # 🎲 Cube Puzzle Simulator
 
 A 3x3 cube puzzle (like Rubik's Cube or GAN) simulator that runs in your browser.  
-Deployed on [GitHub Pages](https://itachiwalker.github.io/cubew).
+Deployed on [Cloudflare](https://cubew.itachiwalker.workers.dev).
 
 **Current version: v3.48.x**
 
@@ -12,7 +12,7 @@ Deployed on [GitHub Pages](https://itachiwalker.github.io/cubew).
 
 ## 🚀 Getting Started
 
-Just open GitHub Pages [https://itachiwalker.github.io/cubew](https://itachiwalker.github.io/cubew) to play.  
+Just open [https://cubew.itachiwalker.workers.dev](https://cubew.itachiwalker.workers.dev) to play.  
 Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (Safari)
 
 ---
@@ -184,14 +184,14 @@ The SET → History tab's "with CAM" move-command string (see Cube state editor 
 Development and publishing are split across separate repositories.
 
 ```
-cubew/              (public, no license = all rights reserved) ← the published app (GitHub Pages)
+cubew/              (public, no license = all rights reserved) ← app description page
 cubew_tutorial/     (public, MIT license) ← published tutorial data
 cube_solver_api/    (public, GPL-2.0 license) ← external solver (hosted on Render)
 ```
 
 ### cubew (public)
 
-`index.html`, `favicon.svg`, `about.*.html` ("About this app," in 9 languages), and the `tutorial/` files. Published via GitHub Pages.
+This repository exists to host the README and accept Issues (feature requests / bug reports). The app itself is published on Cloudflare ([https://cubew.itachiwalker.workers.dev](https://cubew.itachiwalker.workers.dev)).
 
 ### cubew_tutorial (public, MIT)
 
@@ -228,7 +228,7 @@ The source code in this repository is not licensed; all rights are reserved by t
 
 ### What's allowed
 
-- Freely using (playing) this app on this service (GitHub Pages)
+- Freely using (playing) this app on this service (Cloudflare)
 
 ### Prohibited
 
