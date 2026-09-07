@@ -3,7 +3,7 @@
 ブラウザで動作する3x3キューブパズル（ルービックキューブやGANなど）のシミュレーターです。  
 [Cloudflare](https://cubew.itachiwalker.workers.dev) にデプロイしています。
 
-**現在のバージョン: v3.48.x**
+**現在のバージョン: v3.49.x**
 
 <!-- TODO: 下記のscreenshot.pngを実際のスクリーンショット画像に差し替えてください（cubewリポジトリ直下に配置） -->
 ![cubewのスクリーンショット](screenshot.png)

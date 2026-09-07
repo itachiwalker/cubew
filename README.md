@@ -3,7 +3,7 @@
 A 3x3 cube puzzle (like Rubik's Cube or GAN) simulator that runs in your browser.  
 Deployed on [Cloudflare](https://cubew.itachiwalker.workers.dev).
 
-**Current version: v3.48.x**
+**Current version: v3.49.x**
 
 <!-- TODO: replace screenshot.png below with an actual screenshot (place it at the root of the cubew repo) -->
 ![cubew screenshot](screenshot.png)

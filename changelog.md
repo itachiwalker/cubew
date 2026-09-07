@@ -11,6 +11,47 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.49.49]-[3.49.60] - 2026-09 - Cloudflare migration, Backup/Restore, menu reorganization
+
+### Added
+- Primary deployment target migrated from GitHub Pages to Cloudflare Workers (static assets + a small custom routing Worker), mainly to fix GitHub Pages' persistent `sitemap.xml` indexing issue with Google Search Console — now resolved
+- New Backup/Restore dialog (Menu → Backup/Restore): exports settings, registered commands, and high scores to a downloadable JSON file (`cubew-backup-<timestamp>.json`), with individual checkboxes for what to include/restore. Files carry a lightweight tamper/corruption-detection hash; restoring shows which sections are actually present in the chosen file (missing sections are disabled, not silently skipped) and reloads the app once done
+- Camera-pin (⫯) state is no longer persisted across sessions — it now always starts enabled, matching the existing "replay commands" toggle's behavior, instead of remembering its last state
+- Countdown-related visibility fixes: the pre-play (⏵/AutoPlay) countdown text now has a dark outline so it stays legible over the cube's white faces, and the swipe-guide/command-aim overlay is hidden for the countdown's duration instead of showing through it
+- Menu items reordered by frequency/grouping: High Scores, Settings, Backup/Restore, Help, Share, QR code, About, Licenses (previously About, Share, QR code, Settings, Help, Backup/Restore, High Scores, Licenses)
+- Toolbox (dev/test build only): new HW tab reporting the actual WebGL renderer/vendor strings (`WEBGL_debug_renderer_info`), flagging known software-rendering fallbacks (SwiftShader, Microsoft Basic Render Driver, llvmpipe, etc.) to help diagnose choppy rotation caused by disabled hardware acceleration
+
+### Fixed
+- Fixed a bug where a rotation/camera animation's very first `requestAnimationFrame` callback could fire long after the animation was requested (heavy CPU/GPU load, software rendering, tab backgrounding, etc.), making the animation appear to jump most of the way through instantly and only animate a brief tail end — occasionally reading as spinning the wrong direction. All animation loops (cube rotation, camera-home, SbS camera moves/shake, orbit view buttons, the solve celebration spin) now anchor their start time to the first frame that actually renders, so the full intended duration is always used regardless of any prior delay
+- Fixed the installed-PWA "site can't be reached" error some users hit after the first app-shell update: the service worker's fetch handler could `cache.put()` a redirected response for a navigation request, which the Cache API rejects outright, and a separate code path could resolve to `undefined` on a failed fetch with nothing cached, both of which are now handled correctly
+- Fixed `.html`-suffixed URLs (about pages, etc.) being silently redirected to an extensionless form on Cloudflare by default; a small custom Worker (`src/index.js`) now serves them exactly as requested while still resolving `/` to `index.html`, matching the self-hosted test environment's behavior
+
+## [3.49.33]-[3.49.48] - 2026-09 - PWA support, shared solve replay, highscore celebration
+
+### Added
+- The app is now installable as a PWA (`manifest.json` + a service worker for offline app-shell/tutorial-image caching), with dedicated icon assets (192/512, maskable variants) and favicons
+- New URL-based solve sharing: tapping the share icon on a Highscore entry (or on the new rank-1 celebration panel, see below) builds a `#s=`-suffixed link carrying the compressed, hash-verified initial state and move string. Opening a shared link on the app plays it back automatically (after a 3-second countdown) as a Step-by-step replay; invalid/corrupted links show an error instead of silently failing. Links over a configurable length are disabled rather than offered, since some solves are too long to fit comfortably in a URL
+- New rank-1 celebration panel: the first time a new personal-best or first-ever clear reveals itself in the auto-shown Highscore dialog, a panel expands between rank 1 and rank 2 with a ▶ replay of that solve, a share link, and a Ko-fi support link (message wording differs for "first clear" vs "new record")
+- Highscore's ▶ replay (and any replay launched via a shared link) now runs a 3-second countdown before AutoPlay starts, instead of jumping straight into playback
+- Remaining emoji-based icons (tutorial start/exit, help dialog's button-reference table, the in-tutorial timer-area label) replaced with the same inline SVG icon set used everywhere else in the app, dropping the last dependency on the Noto Sans Symbols 2 web font entirely
+
+### Fixed
+- Fixed the PWA's "About this app" page reloading/discarding the running app's cube state, scramble, and timer when opened from the menu — it's now shown as an in-place iframe overlay while installed as a standalone app, instead of navigating the window away and back
+- Fixed several installed-PWA-specific issues found during testing: an extra splash screen and, in the worst case, the app closing outright when returning from the About page; GitHub Pages links inside the About overlay failing to open (GitHub refuses to be framed) — external links now always open in a real new tab regardless of context
+
+## [3.49.12]-[3.49.32] - 2026-08 - History/CAM copy fixes, icon cleanup
+
+### Added
+- Continued replacing emoji-based button icons and menu items with inline SVG (Tabler Icons-style) across the menu, settings dialog, and README illustrations, for consistent rendering across platforms without relying on any particular emoji font
+- Round icon buttons (menu, help, tutorial start/exit) enlarged from 28×28px to 36×36px for easier tapping, with icon glyphs resized to match the square buttons' effective visual size
+
+### Fixed
+- Fixed the SET → History dialog's CAM-and-commands move-string copy losing `C_X(...)` command tokens and `CAM(θ,φ)` entries after replaying a Step-by-step session, and fixed the trailing `CAM(...)` after such a replay using the live (approximate) camera angle instead of the replay's own precomputed end angle
+- Fixed the left-side menu button's tooltip incorrectly showing "Settings" instead of "Menu"
+- Fixed SbS mode not reliably stopping AutoPlay when exited via RESET mid-playback, or when a new Highscore replay was started while one was already auto-playing — either could leave a stale animation timer running against the freshly reset cube/history
+
+---
+
 ## [3.49.0]-[3.49.11] - 2026-08 - Command-aware history, replay-as-commands toggle
 
 ### Added
