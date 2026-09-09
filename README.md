@@ -42,7 +42,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | High scores | Saves your top 10 solve times after each scramble, along with the move count. The high score screen is shown automatically after clearing, with this run's time highlighted. Eligible entries (solved in 500 moves or fewer) show a <img src="icons/icon-play.svg" width="14" align="absmiddle"> button that replays that exact solve as a Step-by-step session, camera moves and double-tap commands included (ending at the home view) — the replay's title (date, move count, time) is shown where the personal-best time normally is |
 | Celebration effects | Confetti, a camera spin (returning to the home position first, then spinning horizontally with an easing landing), and a message (in 9 languages; long text scrolls horizontally) when the cube is solved |
 | Net (unfolded) view (<img src="icons/icon-net.svg" width="14" align="absmiddle">) | Always visible, updates in real time as you move; cycles through 3 layout patterns |
-| Tutorial | Made up of three content types: step-by-step lessons for the LBL method, exams (freely operate the cube from an initial state toward a goal state), and glossary/terminology entries. Guided by arrows, aiming reticles, and camera moves at every step. Available in 9 languages. Launched from the 📚 button in the bottom-right of the screen. "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back" resets the current lesson/exam if there's progress, or moves to the previous item if not |
+| Tutorial | Made up of three content types: step-by-step lessons for the LBL method, exams (freely operate the cube from an initial state toward a goal state), and glossary/terminology entries. Guided by arrows, aiming reticles, and camera moves at every step. Available in 9 languages. Launched from the <img src="icons/icon-tutorial.svg" width="14" align="absmiddle"> button in the bottom-right of the screen. "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back" resets the current lesson/exam if there's progress, or moves to the previous item if not |
 | Bulk command registration | Each level heading in the tutorial list has a "<img src="icons/icon-cmd.svg" width="14" align="absmiddle"> Register all" button, which registers every lesson's commands within that level at once, and detects conflicts (a warning, aimed at the author, when the same cell has different content across lessons) |
 | Tutorial notation | `C_F3(seq)` = aiming command / `R(F)` = arrow limited to one face / `CAM(θ,φ)` = camera move (2 arguments) / `X2'` = directional 180° |
 | Share | Share the app's URL via the Web Share API (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu) |
@@ -173,8 +173,7 @@ The SET → History tab's "with CAM" move-command string (see Cube state editor 
 | Confetti library | canvas-confetti 1.9.4 (ISC) |
 | Tooltips | Tippy.js 6.3.7 + Popper.js 2.11.8 (MIT, restyled with the app's own dark theme) |
 | QR code | qrcode.js 1.4.4 (soldair, MIT) |
-| Icons | Main buttons are SVG to avoid rendering differences across platforms. Colors use `currentColor`, so they automatically follow the button's state (normal/hover/disabled, etc.) via CSS. Only the tutorial's two buttons (open/exit) are still pending conversion |
-| Font | Noto Sans Symbols 2 (Google Fonts / OFL 1.1) |
+| Icons | All buttons use inline SVG (mostly [Tabler Icons](https://tabler.io/icons), MIT) to avoid rendering differences across platforms. Colors use `currentColor`, so they automatically follow the button's state (normal/hover/disabled, etc.) via CSS |
 | File structure | A single HTML file |
 
 ---
