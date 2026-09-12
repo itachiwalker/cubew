@@ -11,6 +11,23 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.49.67]-[3.49.95] - 2026-09 - PWA update flow, F2L tutorial skeleton, mode-management fixes
+
+### Added
+- PWA updates now require explicit consent instead of applying silently: when a new version is detected, a dialog asks "The app has been updated. Update now?" before applying it, with a full-screen loading indicator during the switch. A "Check for Update" menu item (installed-PWA only) lets you check on demand
+- F2L tutorial content: all 41 patterns are now present with their starting-state reference images (per-move hint images are still in progress)
+- New "□ Retry" button in Exam mode (enabled once you've actually moved the cube or camera) and in Step-by-step mode (mirrors the "jump to start" ⏮ button exactly)
+
+### Changed
+- Icon strategy clarified: Tabler Icons (MIT) for the tutorial, exit, menu, and settings screens; original hand-drawn icons for the main-screen controls (orbit/home/spin, help)
+- The camera-pin's "has this session moved the camera" detection now measures actual angular distance from home instead of a flag that was nearly always true, fixing several buttons that stayed spuriously enabled/disabled
+- Exam mode no longer inherits a leftover "scrambled" flag from before it started, which previously let the stopwatch and a normal highscore save trigger by mistake during an exam attempt
+
+### Fixed
+- Fixed the external-solver button staying enabled while browsing (free browsing or exam browsing), caused by an unrelated cleanup routine overriding its correct disabled state
+- Fixed Highscore replay being launchable from exam mode without actually leaving exam mode first
+- Fixed a case where two onboarding hints could appear stacked on top of each other right after starting Step-by-step mode
+
 ## [3.49.49]-[3.49.60] - 2026-09 - Cloudflare migration, Backup/Restore, menu reorganization
 
 ### Added
