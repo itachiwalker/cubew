@@ -179,6 +179,16 @@ The SET → History tab's "with CAM" move-command string (see Cube state editor 
 
 ---
 
+## 📦 PWA (Progressive Web App) Support
+
+- Offline support and home-screen installation via a Web App Manifest (`manifest.json`) + Service Worker (`sw.js`)
+- Works from the offline cache after installation (usable in airplane mode)
+- Updates are never applied automatically. A new Service Worker stays in the `waiting` state, and the app only sends it `postMessage({type:'SKIP_WAITING'})` after the person explicitly agrees via a confirm dialog (see comments in `sw.js` / `my_cube-base.html` for details)
+- Per the Service Worker spec, a pending update can be activated by the browser on its own while the app is fully closed (this cannot be prevented from application code). When that happens, a one-time notice is shown on the next launch: "The app was automatically updated to the latest version."
+- A manual update check is also available from the menu's "Check for updates" item (shown both when installed as a PWA and in a regular Web tab)
+
+---
+
 ## 📁 Repository Structure
 
 Development and publishing are split across separate repositories.
