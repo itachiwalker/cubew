@@ -39,7 +39,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | External solver (<img src="icons/icon-solve.svg" width="14" align="absmiddle">) | Validates the state, then — after a confirmation dialog — solves all six faces automatically. The solution runs automatically after a countdown. Unavailable for about the first minute after the app loads, while the server wakes from sleep (Render's free tier), and again for a minute after each use (cooldown); a thin progress bar under the button fills down over the wait, and the button is disabled until it's done. Almost every other control is locked out while a solve is actually running — RESET remains available as an escape hatch and aborts the run |
 | Exam mode (SET dialog's "Exam" tab) | Freely manipulate the cube from a given initial state toward a given goal state. The initial-state field is pre-filled with the cube's state at the moment the SET dialog was opened. Reaching the goal state triggers the celebration effect automatically. A "□ Retry" button (enabled once you've actually moved the cube or camera) resets to the initial state instantly, with no confirmation needed — the same button also appears during Step-by-step mode, where it simply mirrors the "jump to start" button. RESET (⊞) serves as "exit this mode" (behind a confirmation dialog) in both Exam and Step-by-step |
 | Stopwatch | Starts automatically on the first manual move after a scramble, stops automatically once solved. Your ranking is shown on stop (including "off the leaderboard"). Tap the time while it's flashing white to view high scores |
-| High scores | Saves your top 10 solve times after each scramble, along with the move count. The high score screen is shown automatically after clearing, with this run's time highlighted. Eligible entries (solved in 500 moves or fewer) show a <img src="icons/icon-play.svg" width="14" align="absmiddle"> button that replays that exact solve as a Step-by-step session, camera moves and double-tap commands included (ending at the home view) — the replay's title (date, move count, time) is shown where the personal-best time normally is |
+| High scores | Saves your top 10 solve times after each scramble, along with the move count. The high score screen is shown automatically after clearing, with this run's time highlighted. Eligible entries (solved in 500 moves or fewer) show a <img src="icons/icon-play.svg" width="14" align="absmiddle"> button that replays that exact solve as a Step-by-step session, camera moves and double-tap commands included (ending at the home view) — the replay's title (date, move count, time) is shown where the personal-best time normally is. The share button on the same row shares the replay as a short link (a fixed-length URL keyed on the first 16 hex characters of a SHA-256 hash) via `cubew_replay_hub` (Supabase); shared data is automatically deleted after 30 days |
 | Celebration effects | Confetti, a camera spin (returning to the home position first, then spinning horizontally with an easing landing), and a message (in 9 languages; long text scrolls horizontally) when the cube is solved |
 | Net (unfolded) view (<img src="icons/icon-net.svg" width="14" align="absmiddle">) | Always visible, updates in real time as you move; cycles through 3 layout patterns |
 | Tutorial | Made up of three content types: step-by-step lessons and exams for the LBL method, F2L (all 41 patterns; starting-state reference images are in place, per-move hint images are still being produced), and glossary/terminology entries. Guided by arrows, aiming reticles, and camera moves at every step. Available in 9 languages. Launched from the <img src="icons/icon-tutorial.svg" width="14" align="absmiddle"> button in the bottom-right of the screen. "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back" resets the current lesson/exam if there's progress, or moves to the previous item if not |
@@ -176,6 +176,7 @@ The SET → History tab's "with CAM" move-command string (see Cube state editor 
 | QR code | qrcode.js 1.4.4 (soldair, MIT) |
 | Icons | All buttons use inline SVG (mostly [Tabler Icons](https://tabler.io/icons), MIT) to avoid rendering differences across platforms. Colors use `currentColor`, so they automatically follow the button's state (normal/hover/disabled, etc.) via CSS |
 | File structure | A single HTML file |
+| Replay-sharing backend | Supabase (PostgreSQL) — managed in [cubew_replay_hub](https://github.com/itachiwalker/cubew_replay_hub) (public). Short links keyed on the first 16 hex characters of a SHA-256 hash; shared data is automatically deleted after 30 days |
 
 ---
 
@@ -197,6 +198,7 @@ Development and publishing are split across separate repositories.
 cubew/              (public, no license = all rights reserved) ← app description page
 cubew_tutorial/     (public, MIT license) ← published tutorial data
 cube_solver_api/    (public, GPL-2.0 license) ← external solver (hosted on Render)
+cubew_replay_hub/   (public) ← replay-sharing backend (hosted on Supabase)
 ```
 
 ### cubew (public)
@@ -210,6 +212,10 @@ This repository exists to host the README and accept Issues (feature requests / 
 ### cube_solver_api (public, GPL-2.0)
 
 The external solver (Flask + kociemba), deployed on Render. Because kociemba is GPL-2.0 licensed, the published source must also be GPL-2.0.
+
+### cubew_replay_hub (public)
+
+The backend for the high scores' replay-sharing feature. Manages only the Supabase (PostgreSQL) table definitions, RLS, and RPC function migrations, auto-deployed via the GitHub integration. Contains no credentials at all — the security model relies entirely on Postgres's own privilege setup, not on keeping the SQL hidden, so it's safe to publish.
 
 ---
 
