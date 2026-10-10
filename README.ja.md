@@ -1,9 +1,9 @@
 # 🎲 Cube Puzzle Simulator
 
 ブラウザで動作する3x3キューブパズル（ルービックキューブやGANなど）のシミュレーターです。  
-[Cloudflare](https://cubew.itachiwalker.workers.dev) にデプロイしています。
+[Cloudflare](https://cubew.itachiwalker.com) にデプロイしています。
 
-**現在のバージョン: v3.49.x**
+**現在のバージョン: v3.51.x**
 
 <!-- TODO: 下記のscreenshot.pngを実際のスクリーンショット画像に差し替えてください（cubewリポジトリ直下に配置） -->
 ![cubewのスクリーンショット](screenshot.png)
@@ -12,7 +12,7 @@
 
 ## 🚀 起動方法
 
-[https://cubew.itachiwalker.workers.dev](https://cubew.itachiwalker.workers.dev) を開くだけで動作します。  
+[https://cubew.itachiwalker.com](https://cubew.itachiwalker.com) を開くだけで動作します。  
 動作確認済み：Windows (Firefox / Chrome) · Android (Chrome) · iPhone (Safari)
 
 ---
@@ -42,17 +42,18 @@
 | ハイスコア | スクランブル後に6面揃えたタイムと手数を上位10件保存。クリア後にハイスコア画面を自動表示・今回のタイムを強調。500手以内で揃えた場合、該当行に<img src="icons/icon-play.svg" width="14" align="absmiddle">ボタンが表示され、押すとその解法をステップ実行（視点移動・ダブルタップコマンド含む、最後はホーム視点で終了）として再生できる。再生中は、ベストタイムの表示位置にその解法のタイトル（日付・手数・タイム）が表示される。同じ行の共有ボタンからは、`cubew_replay_hub`（Supabase）を介した短いリンク（SHA-256先頭16文字をキーとする固定長URL）でリプレイを共有できる。共有データは30日で自動削除される |
 | お祝い演出 | 6面揃えると花火・視点回転（まずホームポジションへ移動してから水平に1周、着地はスムーズに減速）・メッセージ表示（9言語対応、長文は横スクロール） |
 | 展開図（<img src="icons/icon-net.svg" width="14" align="absmiddle">） | 常時表示、操作に連動してリアルタイム更新。3パターンのレイアウトを循環切替 |
-| チュートリアル | LBL法の段階的レッスン・試験とF2L（全41パターン、開始状態画像は実装済み・ヒント画像は作成中）・用語解説の3レベルで構成。矢印ガイド・照準・視点移動でステップごとに誘導。9言語対応。画面右下の<img src="icons/icon-tutorial.svg" width="14" align="absmiddle">ボタンから起動。「<img src="icons/icon-rev.svg" width="14" align="absmiddle">前へ」は進捗があれば現在のレッスン/試験をリセット、無ければ前の項目へ移動 |
+| チュートリアル | LBL法の段階的レッスン・試験とF2L（全41パターン、開始状態画像は実装済み・ヒント画像は作成中）・用語解説の3レベルで構成。矢印ガイド・照準・視点移動・ヒント画像でステップごとに誘導。9言語対応。画面右下の<img src="icons/icon-tutorial.svg" width="14" align="absmiddle">ボタンから起動。画面下のナビは「<img src="icons/icon-rev.svg" width="14" align="absmiddle">前へ」「やり直す」「リスト」「次へ」の4つで、「前へ」は前の項目への移動のみ（レベルの境界は越えない）、現在のレッスン/試験を最初からやり直すには「やり直す」を使う |
+| お気に入り・ランダム出題 | チュートリアルのレッスン/試験に★を付けられる（一覧の各行の★、または実行中に左下に表示される★ボタン）。各レベルの見出しの下に、★の付いた項目だけを表示する「★のみ表示」と、★の付いた試験をランダムな順番で出題する「ランダム出題」ボタンがある |
 | コマンド一括登録 | チュートリアル一覧の各レベル見出しに「<img src="icons/icon-cmd.svg" width="14" align="absmiddle"> まとめて登録」ボタン。レベル内全レッスンのコマンドを一度に登録・矛盾検出（レッスン間で同じマスに異なる内容がある場合の作者向け警告） |
 | チュートリアル記法 | `C_F3(seq)`=照準コマンド / `R(F)`=矢印面限定 / `CAM(θ,φ)`=視点移動（2引数） / `X2'`=方向付き180° |
 | シェア機能 | Web Share APIでアプリのURLを共有（<img src="icons/icon-menu.svg" width="14" align="absmiddle">メニュー） |
 | QRコード表示 | 現在のURLをQRコードで表示（<img src="icons/icon-menu.svg" width="14" align="absmiddle">メニュー） |
-| <img src="icons/icon-menu.svg" width="14" align="absmiddle"> メニュー | 設定・シェア・QRコード・ヘルプ・ハイスコア・ライセンス |
+| <img src="icons/icon-menu.svg" width="14" align="absmiddle"> メニュー | ハイスコア・設定・バックアップ/復元・ヘルプ・シェア・QRコード・このアプリについて・ライセンス・アップデートを確認 |
 | 設定画面 | 言語設定（9言語）・速度設定（4段階）・座標軸表示設定 |
 | ライセンス表示 | 使用OSSのライセンス全文を表示（<img src="icons/icon-menu.svg" width="14" align="absmiddle"> → ライセンス） |
 | ツールチップ（<img src="icons/icon-help.svg" width="14" align="absmiddle">） | 4段階トグル: 簡易ヘルプページ → 左パネル → 右パネル → 消去。ページロード時は自動で案内表示 |
 | 多言語対応 | 日本語・中文・Français・English・한국어・Español・Português・Deutsch・Русский（9言語） |
-| PWA自動更新 | 更新は自動適用せず、「アプリが更新されました。更新しますか？」の確認を経てから適用（同意後は全画面ローディング表示）。メニューの「アップデートを確認」（PWAインストール時のみ表示）から手動チェックも可能 |
+| PWA自動更新 | 更新は自動適用せず、「アプリが更新されました。更新しますか？」の確認を経てから適用（同意後は全画面ローディング表示）。メニューの「アップデートを確認」（PWA・通常のWebタブいずれでも表示）から手動チェックも可能。保留中の更新がアプリを閉じている間に自動適用された場合は、次回起動時にお知らせを表示 |
 | localStorage 保存 | 速度・言語・座標軸・コマンド設定・ピン留め設定・ハイスコアをブラウザ再起動後も保持 |
 
 ---
@@ -99,7 +100,7 @@
 
 | ボタン | 機能 |
 |--------|------|
-| <img src="icons/icon-reset.svg" width="18" align="absmiddle"> | リセット（チュートリアル中は常にDisabled。「<img src="icons/icon-rev.svg" width="14" align="absmiddle">前へ」に統合） |
+| <img src="icons/icon-reset.svg" width="18" align="absmiddle"> | リセット（チュートリアル中は常にDisabled。やり直しはチュートリアルナビの「やり直す」で行う） |
 | <img src="icons/icon-shuffle.svg" width="18" align="absmiddle"> | スクランブル |
 | <img src="icons/icon-face.svg" width="18" align="absmiddle"> | FACE補正 |
 | <img src="icons/icon-set.svg" width="18" align="absmiddle"> | キューブ状態設定（設定／試験／履歴タブ） |
@@ -119,8 +120,8 @@
 
 | ボタン | 機能 |
 |--------|------|
-| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | メニュー（このアプリについて・シェア・QRコード・設定・ヘルプ・ハイスコア・ライセンス） |
-| <img src="icons/icon-help.svg" width="18" align="absmiddle"> | ツールチップ表示（4段階トグル）。ロード時は自動で案内表示。チュートリアル中はDisabled |
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | メニュー（ハイスコア・設定・バックアップ/復元・ヘルプ・シェア・QRコード・このアプリについて・ライセンス・アップデートを確認） |
+| <img src="icons/icon-help.svg" width="18" align="absmiddle"> | ツールチップ表示（4段階トグル）。ロード時は自動で案内表示。チュートリアル中は非表示になり、同じ位置に★（実行中のレッスン/試験のお気に入り登録/解除）が表示される |
 | <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | 視点を縦方向に往復 |
 | <img src="icons/icon-home.svg" width="18" align="absmiddle"> | 視点を定位置に戻す |
 | <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | 視点を横方向に1周 |
@@ -198,22 +199,22 @@ SET→履歴タブの「CAM付き」回転コマンド文字列（上記キュ�
 cubew/              (public, ライセンスなし＝全著作権留保) ← アプリ説明用
 cubew_tutorial/     (public, MITライセンス) ← チュートリアルデータ公開用
 cube_solver_api/    (public, GPL-2.0ライセンス) ← 外部ソルバー（Renderでホスティング）
-cubew_replay_hub/   (public) ← リプレイ共有バックエンド（Supabaseでホスティング）
+cubew_replay_hub/   (public, MITライセンス) ← リプレイ共有バックエンド（Supabaseでホスティング）
 ```
 
 ### cubew（public）
 
-READMEの公開とIssue（ご要望・不具合報告）の受付が目的のリポジトリです。アプリ本体はCloudflareで公開しています（[https://cubew.itachiwalker.workers.dev](https://cubew.itachiwalker.workers.dev)）。
+READMEの公開とIssue（ご要望・不具合報告）の受付が目的のリポジトリです。アプリ本体はCloudflareで公開しています（[https://cubew.itachiwalker.com](https://cubew.itachiwalker.com)）。
 
 ### cubew_tutorial（public、MIT）
 
-`default.json`・`LBL/*.png`・`terms/*.png`・`README.md`/`README.ja.md`・`schema.md`/`schema.ja.md`。チュートリアルデータのみを独立して公開し、フォーク・改変を歓迎する想定。
+`default.json`・`LBL/*.png`・`F2L/*.png`・`terms/*.png`・`README.md`/`README.ja.md`・`schema.md`/`schema.ja.md`。チュートリアルデータのみを独立して公開し、フォーク・改変を歓迎する想定。
 
 ### cube_solver_api（public、GPL-2.0）
 
 外部ソルバー（Flask + kociemba）。Renderにデプロイ済み。kociembaがGPL-2.0ライセンスのため、ソース公開時はGPL-2.0が必須。
 
-### cubew_replay_hub（public）
+### cubew_replay_hub（public、MIT）
 
 ハイスコアのリプレイ共有機能のバックエンド。Supabase (PostgreSQL) のテーブル定義・RLS・RPC関数のマイグレーションのみを管理し、GitHub連携により自動デプロイされる。認証情報は一切含まれない（セキュリティはPostgres側の権限設計そのものに依っており、SQLの中身を隠すことに依存していないため公開可能）。
 

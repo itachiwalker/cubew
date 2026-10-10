@@ -1,9 +1,9 @@
 # 🎲 Cube Puzzle Simulator
 
 A 3x3 cube puzzle (like Rubik's Cube or GAN) simulator that runs in your browser.  
-Deployed on [Cloudflare](https://cubew.itachiwalker.workers.dev).
+Deployed on [Cloudflare](https://cubew.itachiwalker.com).
 
-**Current version: v3.49.x**
+**Current version: v3.51.x**
 
 <!-- TODO: replace screenshot.png below with an actual screenshot (place it at the root of the cubew repo) -->
 ![cubew screenshot](screenshot.png)
@@ -12,7 +12,7 @@ Deployed on [Cloudflare](https://cubew.itachiwalker.workers.dev).
 
 ## 🚀 Getting Started
 
-Just open [https://cubew.itachiwalker.workers.dev](https://cubew.itachiwalker.workers.dev) to play.  
+Just open [https://cubew.itachiwalker.com](https://cubew.itachiwalker.com) to play.  
 Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (Safari)
 
 ---
@@ -42,17 +42,18 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 | High scores | Saves your top 10 solve times after each scramble, along with the move count. The high score screen is shown automatically after clearing, with this run's time highlighted. Eligible entries (solved in 500 moves or fewer) show a <img src="icons/icon-play.svg" width="14" align="absmiddle"> button that replays that exact solve as a Step-by-step session, camera moves and double-tap commands included (ending at the home view) — the replay's title (date, move count, time) is shown where the personal-best time normally is. The share button on the same row shares the replay as a short link (a fixed-length URL keyed on the first 16 hex characters of a SHA-256 hash) via `cubew_replay_hub` (Supabase); shared data is automatically deleted after 30 days |
 | Celebration effects | Confetti, a camera spin (returning to the home position first, then spinning horizontally with an easing landing), and a message (in 9 languages; long text scrolls horizontally) when the cube is solved |
 | Net (unfolded) view (<img src="icons/icon-net.svg" width="14" align="absmiddle">) | Always visible, updates in real time as you move; cycles through 3 layout patterns |
-| Tutorial | Made up of three content types: step-by-step lessons and exams for the LBL method, F2L (all 41 patterns; starting-state reference images are in place, per-move hint images are still being produced), and glossary/terminology entries. Guided by arrows, aiming reticles, and camera moves at every step. Available in 9 languages. Launched from the <img src="icons/icon-tutorial.svg" width="14" align="absmiddle"> button in the bottom-right of the screen. "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back" resets the current lesson/exam if there's progress, or moves to the previous item if not |
+| Tutorial | Made up of three content types: step-by-step lessons and exams for the LBL method, F2L (all 41 patterns; starting-state reference images are in place, per-move hint images are still being produced), and glossary/terminology entries. Guided by arrows, aiming reticles, camera moves, and hint images at every step. Available in 9 languages. Launched from the <img src="icons/icon-tutorial.svg" width="14" align="absmiddle"> button in the bottom-right of the screen. The navigation bar has four buttons — "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back", "Retry", "List", and "Next": Back only moves to the previous item (it never crosses into the previous level), and Retry restarts the current lesson/exam from the beginning |
+| Favorites & random quiz | Star (★) any tutorial lesson or exam — from each row of the tutorial list, or with the ★ button shown in the bottom-left while an item is running. Under each level's heading, "★ only" shows just your starred items, and "Random quiz" runs through that level's starred exams in a random order |
 | Bulk command registration | Each level heading in the tutorial list has a "<img src="icons/icon-cmd.svg" width="14" align="absmiddle"> Register all" button, which registers every lesson's commands within that level at once, and detects conflicts (a warning, aimed at the author, when the same cell has different content across lessons) |
 | Tutorial notation | `C_F3(seq)` = aiming command / `R(F)` = arrow limited to one face / `CAM(θ,φ)` = camera move (2 arguments) / `X2'` = directional 180° |
 | Share | Share the app's URL via the Web Share API (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu) |
 | QR code | Display the current URL as a QR code (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu) |
-| <img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu | Settings, share, QR code, help, high scores, license |
+| <img src="icons/icon-menu.svg" width="14" align="absmiddle"> menu | High scores, settings, backup/restore, help, share, QR code, about, licenses, check for update |
 | Settings screen | Language (9 languages), speed (4 levels), and axis-display settings |
 | License display | Shows the full license text of the OSS used (<img src="icons/icon-menu.svg" width="14" align="absmiddle"> → License) |
 | Tooltip (<img src="icons/icon-help.svg" width="14" align="absmiddle">) | 4-stage toggle: quick help page → left panel → right panel → cleared. Shown automatically on page load |
 | Multi-language support | Japanese, Chinese, French, English, Korean, Spanish, Portuguese, German, Russian (9 languages) |
-| PWA update flow | Updates require explicit consent rather than applying automatically: a "The app has been updated. Update now?" dialog appears, with a full-screen loading indicator while the update is applied. A "Check for Update" menu item (shown only when installed as a PWA) lets you check on demand |
+| PWA update flow | Updates require explicit consent rather than applying automatically: a "The app has been updated. Update now?" dialog appears, with a full-screen loading indicator while the update is applied. A "Check for Update" menu item (shown both when installed as a PWA and in a regular Web tab) lets you check on demand. If a pending update was applied automatically while the app was closed, you'll get a one-time notice the next time you open it |
 | localStorage persistence | Speed, language, axis display, command bindings, pin setting, and high scores all persist across browser restarts |
 
 ---
@@ -99,7 +100,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 
 | Button | Function |
 |--------|------|
-| <img src="icons/icon-reset.svg" width="18" align="absmiddle"> | Reset (always disabled during a tutorial; merged into "<img src="icons/icon-rev.svg" width="14" align="absmiddle"> Back") |
+| <img src="icons/icon-reset.svg" width="18" align="absmiddle"> | Reset (always disabled during a tutorial; use the tutorial bar's "Retry" instead) |
 | <img src="icons/icon-shuffle.svg" width="18" align="absmiddle"> | Scramble |
 | <img src="icons/icon-face.svg" width="18" align="absmiddle"> | Face correction |
 | <img src="icons/icon-set.svg" width="18" align="absmiddle"> | Cube state editor (Settings/Exam/History tabs) |
@@ -119,8 +120,8 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 
 | Button | Function |
 |--------|------|
-| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | Menu (About, Share, QR code, Settings, Help, High Scores, Licenses) |
-| <img src="icons/icon-help.svg" width="18" align="absmiddle"> | Show tooltip help (4-stage toggle). Shown automatically on load. Disabled during a tutorial |
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | Menu (High Scores, Settings, Backup/Restore, Help, Share, QR code, About, Licenses, Check for Update) |
+| <img src="icons/icon-help.svg" width="18" align="absmiddle"> | Show tooltip help (4-stage toggle). Shown automatically on load. Hidden during a tutorial, where a ★ button (favorite the current lesson/exam) takes its place |
 | <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | Sweep the camera vertically |
 | <img src="icons/icon-home.svg" width="18" align="absmiddle"> | Return the camera to its default position |
 | <img src="icons/icon-spin.svg" width="18" align="absmiddle"> | Sweep the camera horizontally, full circle |
@@ -198,22 +199,22 @@ Development and publishing are split across separate repositories.
 cubew/              (public, no license = all rights reserved) ← app description page
 cubew_tutorial/     (public, MIT license) ← published tutorial data
 cube_solver_api/    (public, GPL-2.0 license) ← external solver (hosted on Render)
-cubew_replay_hub/   (public) ← replay-sharing backend (hosted on Supabase)
+cubew_replay_hub/   (public, MIT license) ← replay-sharing backend (hosted on Supabase)
 ```
 
 ### cubew (public)
 
-This repository exists to host the README and accept Issues (feature requests / bug reports). The app itself is published on Cloudflare ([https://cubew.itachiwalker.workers.dev](https://cubew.itachiwalker.workers.dev)).
+This repository exists to host the README and accept Issues (feature requests / bug reports). The app itself is published on Cloudflare ([https://cubew.itachiwalker.com](https://cubew.itachiwalker.com)).
 
 ### cubew_tutorial (public, MIT)
 
-`default.json`, `LBL/*.png`, `terms/*.png`, `README.md`/`README.ja.md`, `schema.md`/`schema.ja.md`. The tutorial data is published on its own, and forks/modifications are welcome.
+`default.json`, `LBL/*.png`, `F2L/*.png`, `terms/*.png`, `README.md`/`README.ja.md`, `schema.md`/`schema.ja.md`. The tutorial data is published on its own, and forks/modifications are welcome.
 
 ### cube_solver_api (public, GPL-2.0)
 
 The external solver (Flask + kociemba), deployed on Render. Because kociemba is GPL-2.0 licensed, the published source must also be GPL-2.0.
 
-### cubew_replay_hub (public)
+### cubew_replay_hub (public, MIT)
 
 The backend for the high scores' replay-sharing feature. Manages only the Supabase (PostgreSQL) table definitions, RLS, and RPC function migrations, auto-deployed via the GitHub integration. Contains no credentials at all — the security model relies entirely on Postgres's own privilege setup, not on keeping the SQL hidden, so it's safe to publish.
 

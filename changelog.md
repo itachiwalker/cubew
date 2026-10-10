@@ -9,6 +9,25 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.50.00]-[3.51.21] - 2026-09 - Replay sharing, tutorial favorites & random quiz, navigation overhaul
+
+### Added
+- **Short replay-share links**: the share button on a high score now uploads the replay to a small backend ([cubew_replay_hub](https://github.com/itachiwalker/cubew_replay_hub)) and gives you a short, fixed-length link instead of a very long one. Shared replays are deleted automatically after 30 days
+- Opening a shared replay and watching it all the way to a solved cube now plays the celebration (fireworks + message) the first time
+- On PCs without a native share sheet, the share button now copies the link to the clipboard instead of just saying sharing isn't supported
+- **Tutorial favorites (★)**: mark any lesson or exam with a star, either from the tutorial list or with the new ★ button shown in the bottom-left while a tutorial item is running (it takes the place of the ? button, which isn't usable during the tutorial anyway)
+- **"★ only" filter and "Random quiz"** per tutorial level: show only your starred items, or run through all of that level's starred exams in a random order (Back/Next move through the shuffled list; a small dice icon next to Back shows a quiz is in progress)
+- New **"Retry"** button in the tutorial navigation bar, so the bar is now Back / Retry / List / Next
+- If the app was updated automatically while it was completely closed (something browsers can do on their own), a one-time notice now tells you which version you're on next time you open it
+
+### Changed
+- Tutorial **"Back" is now pure navigation** and never resets the current item (that's what "Retry" is for). At the start of a step it goes to the previous step — opening the list at that step if it has an explanation to (re-)read, or jumping straight to its last item if it doesn't. It never crosses into the previous level
+- "Check for Update" is now in the menu in a regular browser tab too, not only when installed as an app
+- Old-style long share links (from before the short links) are no longer supported
+- Tutorial list: lessons and exams are shown with icons instead of text labels (green book / orange clipboard), F2L steps use one compact image next to their items instead of a full-width image, and each level's buttons sit on their own right-aligned row under the title
+- The bottom row of buttons (menu, help, camera buttons, pin/replay toggles) now lines up with the tutorial button in the bottom-right corner, with everything stacked above it (button pad, tutorial navigation, Retry, hint image) moved up to match
+- Notification toasts are slimmer, without the drop shadow
+
 ---
 
 ## [3.49.67]-[3.49.95] - 2026-09 - PWA update flow, F2L tutorial skeleton, mode-management fixes
