@@ -9,6 +9,15 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.51.41]-[3.51.42] - 2026-10-31 - User guide in all languages
+
+### Changed
+- The user guide is now available in all nine languages; the menu and the About page open the version for your language.
+
+### Fixed
+- The command registration dialog showed some untranslated Japanese text.
+- Corrected the Russian title of the F2L course. Because the course content changed, F2L progress and favorites are reset once.
+
 ## [3.51.35]-[3.51.39] - 2026-10-31 - User guide
 
 ### Added
