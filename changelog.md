@@ -9,7 +9,7 @@ Version format: `X.Y.Z`
 
 ---
 
-## [3.51.22]-[3.51.39] - 2026-10 - New domain, layout and icon polish
+## [3.51.35]-[3.51.39] - 2026-10-31 - User guide
 
 ### Added
 - A new [user guide](https://cubew.itachiwalker.com/guide/) explains the screen and buttons (English and Japanese for now). Open it from "User Guide" in the menu or from the About page.
