@@ -9,11 +9,12 @@ Version format: `X.Y.Z`
 
 ---
 
-## [3.51.22]-[3.51.33] - 2026-10 - New domain, layout and icon polish
+## [3.51.22]-[3.51.34] - 2026-10 - New domain, layout and icon polish
 
 ### Changed
 - **The app moved to its own domain: [https://cubew.itachiwalker.com](https://cubew.itachiwalker.com).** The old address (cubew.itachiwalker.workers.dev) now redirects there automatically, including shared replay links. Your saved data (high scores, settings, tutorial progress) is stored per address by the browser, so it doesn't carry over by itself — use Menu → Backup/Restore on the old address before it redirects if you need it. If you installed the app from the old address, remove it and install it again from the new one
 - The "About" pages now have a title that says what the app is (e.g. "Free, Ad-Free Cube Puzzle Simulator"), so they're easier to recognize in search results
+- The "About" pages' introduction was reworded, and it now ends with a "← Back to app" link that works just like the one at the bottom of the page
 - More breathing room between the screen edges and the buttons (8px instead of about 2px). The top navigation row still uses the full width so it never wraps on small phones
 - The left button panel now lines up with the bottom of the right panel, which keeps it clear of the net diagram on short screens — including during tutorials
 - Tutorial navigation: Back and Next are now icon-only arrows with a wider tap area, Retry and List got their own icons, and the random-quiz die uses a proper icon. Icon line weights are now consistent across the app (the share button is a little lighter)
