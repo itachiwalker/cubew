@@ -120,7 +120,7 @@ Verified to work on: Windows (Firefox / Chrome) · Android (Chrome) · iPhone (S
 
 | Button | Function |
 |--------|------|
-| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | Menu (High Scores, Settings, Backup/Restore, Help, Share, QR code, About, Licenses, Check for Update) |
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | Menu (High Scores, Settings, Backup/Restore, Help, User Guide, Share, QR code, About, Licenses, Check for Update) |
 | <img src="icons/icon-help.svg" width="18" align="absmiddle"> | Show tooltip help (4-stage toggle). Shown automatically on load. Hidden during a tutorial, where a ★ button (favorite the current lesson/exam) takes its place |
 | <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | Sweep the camera vertically |
 | <img src="icons/icon-home.svg" width="18" align="absmiddle"> | Return the camera to its default position |

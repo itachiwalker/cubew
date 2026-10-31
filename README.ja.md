@@ -48,7 +48,7 @@
 | チュートリアル記法 | `C_F3(seq)`=照準コマンド / `R(F)`=矢印面限定 / `CAM(θ,φ)`=視点移動（2引数） / `X2'`=方向付き180° |
 | シェア機能 | Web Share APIでアプリのURLを共有（<img src="icons/icon-menu.svg" width="14" align="absmiddle">メニュー） |
 | QRコード表示 | 現在のURLをQRコードで表示（<img src="icons/icon-menu.svg" width="14" align="absmiddle">メニュー） |
-| <img src="icons/icon-menu.svg" width="14" align="absmiddle"> メニュー | ハイスコア・設定・バックアップ/復元・ヘルプ・シェア・QRコード・このアプリについて・ライセンス・アップデートを確認 |
+| <img src="icons/icon-menu.svg" width="14" align="absmiddle"> メニュー | ハイスコア・設定・バックアップ/復元・ヘルプ・使い方ガイド・シェア・QRコード・このアプリについて・ライセンス・アップデートを確認 |
 | 設定画面 | 言語設定（9言語）・速度設定（4段階）・座標軸表示設定 |
 | ライセンス表示 | 使用OSSのライセンス全文を表示（<img src="icons/icon-menu.svg" width="14" align="absmiddle"> → ライセンス） |
 | ツールチップ（<img src="icons/icon-help.svg" width="14" align="absmiddle">） | 4段階トグル: 簡易ヘルプページ → 左パネル → 右パネル → 消去。ページロード時は自動で案内表示 |
@@ -120,7 +120,7 @@
 
 | ボタン | 機能 |
 |--------|------|
-| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | メニュー（ハイスコア・設定・バックアップ/復元・ヘルプ・シェア・QRコード・このアプリについて・ライセンス・アップデートを確認） |
+| <img src="icons/icon-menu.svg" width="18" align="absmiddle"> | メニュー（ハイスコア・設定・バックアップ/復元・ヘルプ・使い方ガイド・シェア・QRコード・このアプリについて・ライセンス・アップデートを確認） |
 | <img src="icons/icon-help.svg" width="18" align="absmiddle"> | ツールチップ表示（4段階トグル）。ロード時は自動で案内表示。チュートリアル中は非表示になり、同じ位置に★（実行中のレッスン/試験のお気に入り登録/解除）が表示される |
 | <img src="icons/icon-rock.svg" width="18" align="absmiddle"> | 視点を縦方向に往復 |
 | <img src="icons/icon-home.svg" width="18" align="absmiddle"> | 視点を定位置に戻す |
