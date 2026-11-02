@@ -9,6 +9,20 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.51.43]-[3.51.49] - 2026-11-02 - Return to your cube after the tutorial
+
+### Added
+- Links to cubew now show a preview image when shared
+- Opening `https://cubew.itachiwalker.com/#tutorial` goes straight to the tutorial list
+- First-time visitors are offered the tutorial once when they scramble or reset
+
+### Changed
+- Exiting the tutorial returns your cube, move history, view, zoom and timer to where you left them. The timer pauses during the tutorial
+- Editing tutorial text or adding a language no longer resets your tutorial progress and favorites
+
+### Fixed
+- The page's language attribute now follows the language saved in settings from startup
+
 ## [3.51.41]-[3.51.42] - 2026-10-31 - User guide in all languages
 
 ### Changed
