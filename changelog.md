@@ -9,6 +9,11 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.51.51] - 2026-11-03 - Wide and double buttons while browsing
+
+### Fixed
+- The wide and double move buttons looked enabled while browsing the move history, but did nothing when pressed. They are now disabled there
+
 ## [3.51.43]-[3.51.49] - 2026-11-02 - Return to your cube after the tutorial
 
 ### Added
