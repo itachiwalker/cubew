@@ -9,6 +9,18 @@ Version format: `X.Y.Z`
 
 ---
 
+## [3.51.55] - 2026-11-04 - User guide in 20 languages
+- The user guide is now available in all 20 languages (the 11 added in v3.51.52 are partly machine-translated). The menu and the About pages open the guide in your language.
+
+## [3.51.54] - 2026-11-03 - "Auto" label
+- The language button "Auto" in Settings now reads "Auto" in every language.
+
+## [3.51.53] - 2026-11-03 - Language order
+- The language buttons in Settings are now sorted alphabetically by English name (after Auto).
+
+## [3.51.52] - 2026-11-03 - 11 new languages
+- Added 11 languages (20 in total): Indonesian, Ukrainian, Traditional Chinese, Malay, Vietnamese, Polish, Dutch, Thai, Tagalog, Swedish and Hungarian. The app, the tutorials and the About pages are translated. These translations are partly machine-translated. The user guide is not translated yet and opens in English.
+
 ## [3.51.51] - 2026-11-03 - Wide and double buttons while browsing
 
 ### Fixed
