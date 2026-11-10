@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://cubew.itachiwalker.com/sitemap.xml
-Sitemap: https://cubew.itachiwalker.com/guide/sitemap-index.xml
-
